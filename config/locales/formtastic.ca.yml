@@ -1,0 +1,10 @@
+ca:
+  formtastic:
+    yes: 'Si'
+    no: 'No'
+    create: 'Crear %{model}'
+    update: 'Editar %{model}'
+    submit: 'Actualitzar %{model}'
+    cancel: 'Cancelar %{model}'
+    reset: 'Resetejar %{model}'
+    required: 'requerit'

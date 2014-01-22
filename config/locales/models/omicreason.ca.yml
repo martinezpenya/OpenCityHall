@@ -1,0 +1,12 @@
+ca:
+  activerecord:
+    models:
+      omic_reason:
+        one: "Motiu"
+        other: "Motius"
+    attributes:
+      omic_reason:
+        name: "Nom"
+        description: "Descripcio"
+        created_at: "Creat el"
+        updated_at: "Modificat el"

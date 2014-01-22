@@ -1,0 +1,15 @@
+//= require active_admin/base
+//= require active_admin/chosen.jquery.min.js
+//= require active_admin/select2.js
+<% 
+  logger.debug "************************************* js locale #{I18n.locale}" 
+  require_asset "active_admin/select2_locale_#{I18n.locale}.js" 
+  require_asset "active_admin/jquery.ui.datepicker-#{I18n.locale}.js"
+%>
+$(document).ready(function(){
+  $(".chzn-select").chosen({no_results_text: "fasdfasdf"});
+  $(".select2able").select2({placeholder: "<%= I18n.t("active_admin.scopes.select2.placeholder") %>", allowClear: true});
+  $('.datepicker').on('focus', function(){
+	$(this).datepicker('option', 'dateFormat', 'dd/mm/yy');
+  });
+})

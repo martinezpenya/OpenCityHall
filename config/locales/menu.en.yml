@@ -1,0 +1,8 @@
+en:
+  menu:
+    master_tables: "Master tables"
+  active_admin:
+    batch_actions:
+      labels:
+        close: "Close"
+        

@@ -1,0 +1,13 @@
+ca:
+  activerecord:
+    models:
+      admin_user:
+        one: "Usuari"
+        other: "Usuaris"
+    attributes:
+      omic_service:
+        name: "Nom"
+        description: "correu-e"
+        initials: "Inicials"
+        created_at: "Creat el"
+        updated_at: "Modificat el"

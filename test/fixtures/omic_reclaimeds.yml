@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  social_name: 
+  common_id_type_id: 
+  doc_id: 
+  address: 
+  cp: 
+  town: 
+  province: 
+  phone1: 
+  phone2: 
+  fax: 
+  email: 
+  notes: MyText
+
+two:
+  social_name: 
+  common_id_type_id: 
+  doc_id: 
+  address: 
+  cp: 
+  town: 
+  province: 
+  phone1: 
+  phone2: 
+  fax: 
+  email: 
+  notes: MyText

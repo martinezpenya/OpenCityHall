@@ -1,0 +1,7 @@
+ca:
+  menu:
+    master_tables: "Taules mestres"
+  active_admin:
+    batch_actions:
+      labels:
+        close: "Tancar"

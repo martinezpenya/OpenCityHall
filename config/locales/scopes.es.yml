@@ -1,0 +1,30 @@
+es:
+  custom:
+    state:
+      male:
+        open: 
+          one: "Abierto"
+          other: "Abiertos"
+        closed:
+          one: "Cerrado"
+          other: "Cerrados"
+      female:
+        open:
+          one: "Abierta"
+          other: "Abiertas"
+        closed:
+          one: "Cerrada"
+          other: "Cerradas"
+
+  active_admin:
+    scopes:
+      all: "Todos/as"
+      open: "Abierto/s"
+      closed: "Cerrado/das"
+      anyactual: "Año actual"
+      anyanterior: "El año anterior"
+      chozen:
+        no_results_text: "No hay ninguna coincidencia con "
+      select2:
+        placeholder: "Clic para seleccionar"
+          

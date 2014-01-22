@@ -1,0 +1,8 @@
+es:
+  menu:
+    master_tables: "Tablas maestras"
+  active_admin:
+    batch_actions:
+      labels:
+        close: "Cerrar"
+        

@@ -1,0 +1,11 @@
+ca:
+  activerecord:
+    models:
+      common_id_type:
+        one: "Tipus d'identificador"
+        other: "Tipus d'identificadors"
+    attributes:
+      common_id_type:
+        name: "Nom"
+        created_at: "Creat el"
+        updated_at: "Modificat el"

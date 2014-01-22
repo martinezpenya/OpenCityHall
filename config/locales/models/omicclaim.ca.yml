@@ -1,0 +1,30 @@
+ca:
+  activerecord:
+    models:
+      omic_claim: 
+        one: "Reclamació"
+        other: "Reclamacions"
+        messages:
+          closed: "La reclamació %{omic_claim_id} s'ha tancat correctament."
+        actions:
+          close: "tancar"
+          ofici: "ofici"  
+          reclamacio: "imprimir"  
+    attributes:
+      omic_claim:
+        year: "Any"
+        datetime: "Data"
+        facts: "Fets"
+        documents: "Documentació que aporta"
+        pretensions: "Pretensió"
+        notes: "Notes"
+        open: "Oberta?"
+        omic_petitioner: "Peticionari"
+        omic_reclaimed: "Reclamat"
+        omic_result: "Resultat"
+        admin_user: "Usuari"
+        omic_sector: "Sector"
+        omic_reason: "Motiu"
+        omic_mean: "Medi"
+        created_at: "Creat el"
+        updated_at: "Modificat el"

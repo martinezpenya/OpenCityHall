@@ -1,0 +1,11 @@
+es:
+  activerecord:
+    models:
+      common_id_type:
+        one: "Tipo de identificador"
+        other: "Tipos de identificador"
+    attributes:
+      common_id_type:
+        name: "Nombre"
+        created_at: "Creado el"
+        updated_at: "Modificado el"

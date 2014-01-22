@@ -1,0 +1,13 @@
+ca:
+  activerecord:
+    models:
+      omic_sector: 
+        one: "Sector"
+        other: "Sectors"
+    attributes:
+      omic_sector:
+        description: "Descripció"
+        response_time: "Temps de resposta (mesos)"
+        created_at: "Creat el"
+        updated_at: "Modificat el"
+  

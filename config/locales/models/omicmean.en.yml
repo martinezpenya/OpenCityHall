@@ -1,0 +1,11 @@
+ca:
+  activerecord:
+    models:
+      omic_mean:
+        one: "Medi"
+        other: "Medis"
+    attributes:
+      omic_mean:
+        description: "Descripció"
+        created_at: "Creat el"
+        updated_at: "Modificat el"

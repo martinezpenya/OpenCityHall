@@ -1,0 +1,11 @@
+ca:
+  activerecord:
+    models:
+      common_id_type:
+        one: "Id type"
+        other: "Id types"
+    attributes:
+      common_id_type:
+        name: "Name"
+        created_at: "Created at"
+        updated_at: "Modified at"

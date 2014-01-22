@@ -1,0 +1,25 @@
+ca:
+  activerecord:
+    models:
+      omic_petitioner: 
+        one: "Petitioner"
+        other: "Petitioners"
+    attributes:
+      omic_petitioner:
+        firstname: "Name"
+        surname1: "1st surname"
+        surname2: "2nd surname"
+        common_id_type: "Id type"
+        id_doc: "Id"
+        address: "Adress"
+        cp: "Postal code"
+        town: "City"
+        province: "Province"
+        phone1: "Phone 1"
+        phone2: "Phone 2"
+        email: "e-mail"
+        notes: "Notes"
+        sex: "Sex"
+        omic_age: "Age"
+        created_at: "Created at"
+        updated_at: "Modified at"

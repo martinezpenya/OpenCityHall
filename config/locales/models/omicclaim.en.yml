@@ -1,0 +1,30 @@
+ca:
+  activerecord:
+    models:
+      omic_claim: 
+        one: "Claim"
+        other: "Claims"
+        messages:
+          closed: "The claim %{omic_claim_id} has been closed succesfully."
+        actions:
+          close: "close"
+          ofici: "office"  
+          reclamacio: "print"  
+    attributes:
+      omic_claim:
+        year: "Year"
+        datetime: "Date"
+        facts: "Facts"
+        documents: "Provided documentation"
+        pretensions: "Pretension"
+        notes: "Notes"
+        open: "Open?"
+        omic_petitioner: "Petitioner"
+        omic_reclaimed: "Reclaimed"
+        omic_result: "Result"
+        admin_user: "User"
+        omic_sector: "Sector"
+        omic_reason: "Reason"
+        omic_mean: "Mean"
+        created_at: "Created at"
+        updated_at: "Modified at"

@@ -1,0 +1,12 @@
+es:
+  activerecord:
+    models:
+      omic_result:
+        one: "Resultado"
+        other: "Resultados"
+    attributes:
+      omic_result:
+        name: "Nombre"
+        description: "Descripción"
+        created_at: "Creado el"
+        updated_at: "Modificado el"

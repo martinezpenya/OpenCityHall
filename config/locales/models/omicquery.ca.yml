@@ -1,0 +1,21 @@
+ca:
+  activerecord:
+    models:
+      omic_query: 
+        one: "Consulta"
+        other: "Consultes"
+        messages:
+          closed: "La consulta %{omic_query_id} s'ha tancat correctament."
+        actions:
+          close: "tancar"    
+    attributes:
+      omic_query:
+        datetime: "Data"
+        notes: "Notes"
+        open: "Oberta?"
+        omic_sector: "Sector"
+        omic_service: "Servici"
+        omic_reason: "Motiu"
+        admin_user: "Usuari"
+        created_at: "Creat el"
+        updated_at: "Modificat el"

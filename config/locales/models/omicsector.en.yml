@@ -1,0 +1,12 @@
+en:
+  activerecord:
+    models:
+      omic_sector: 
+        one: "Sector"
+        other: "Sectors"
+    attributes:
+      omic_sector:
+        description: "Description"
+        response_time: "Answer limit (months)"
+        created_at: "Created at"
+        updated_at: "Updated at"

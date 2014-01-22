@@ -1,0 +1,23 @@
+es:
+  activerecord:
+    models:
+      omic_reclaimed: 
+        one: "Reclamado"
+        other: "Reclamados"
+    attributes:
+      omic_reclaimed:
+        social_name: "Razón social"
+        comercial_name: "Nombre comercial"
+        common_id_type: "Tipo de identificador"
+        id_doc: "Identificador"
+        address: "Dirección"
+        cp: "Codigo Postal"
+        town: "Ciudad"
+        province: "Provincia"
+        phone1: "Teléfono 1"
+        phone2: "Teléfono 2"
+        fax: "Fax"
+        email: "Correo-e"
+        notes: "Notas"
+        created_at: "Creado el"
+        updated_at: "Modificado el"

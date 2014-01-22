@@ -1,0 +1,25 @@
+es:
+  activerecord:
+    models:
+      omic_petitioner: 
+        one: "Reclamante"
+        other: "Reclamantes"
+    attributes:
+      omic_petitioner:
+        firstname: "Nombre"
+        surname1: "1er apellido"
+        surname2: "2o apellido"
+        common_id_type: "Tipo de identificador"
+        id_doc: "Identificador"
+        address: "Dirección"
+        cp: "Codigo Postal"
+        town: "Ciudad"
+        province: "Provincia"
+        phone1: "Teléfono 1"
+        phone2: "Teléfono 2"
+        email: "Correo-e"
+        notes: "Notas"
+        sex: "Sexo"
+        omic_age: "Edad"
+        created_at: "Creado el"
+        updated_at: "Modificado el"

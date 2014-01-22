@@ -1,0 +1,12 @@
+en:
+  activerecord:
+    models:
+      omic_reason:
+        one: "Reason"
+        other: "Reasons"
+    attributes:
+      omic_service:
+        name: "Name"
+        description: "Description"
+        created_at: "Created at"
+        updated_at: "Modified at"

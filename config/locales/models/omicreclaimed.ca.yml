@@ -1,0 +1,23 @@
+ca:
+  activerecord:
+    models:
+      omic_reclaimed: 
+        one: "Reclamat"
+        other: "Reclamats"
+    attributes:
+      omic_reclaimed:
+        social_name: "Raó social"
+        comercial_name: "Nom comercial"
+        common_id_type: "Tipus d'identificador"
+        id_doc: "Identificador"
+        address: "Adreça"
+        cp: "Codi Postal"
+        town: "Ciutat"
+        province: "Provincia"
+        phone1: "Telèfon 1"
+        phone2: "Telèfon 2"
+        fax: "Fax"
+        email: "Correu-e"
+        notes: "Notes"
+        created_at: "Creat el"
+        updated_at: "Modificat el"

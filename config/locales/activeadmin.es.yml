@@ -1,0 +1,92 @@
+#encoding: utf-8
+es:
+  active_admin:
+    dashboard: "Tablón"
+    dashboard_welcome:
+      welcome: "Bienvenido a Open City Hall."
+      call_to_action: ""
+    view: "ver"
+    edit: "editar"
+    delete: "borrar"
+    delete_confirmation: "¿Seguro quieres eliminarlo?"
+    new_model: "Crear %{model}"
+    create_model: "Crear %{model}"
+    edit_model: "Editar %{model}"
+    delete_model: "Eliminar %{model}"
+    details: "Detalles de %{model}"
+    cancel: "Cancelar"
+    empty: "Vacio"
+    previous: "Anterior"
+    next: "Siguiente"
+    download: "Descargar:"
+    has_many_new: "Añadir %{model}"
+    has_many_delete: "Eliminar"
+    has_many_remove: "Quitar"
+    filter: "Filtrar"
+    clear_filters: "Quitar filtros"
+    search_field: "Busca %{field}"
+    equal_to: "Igual a"
+    greater_than: "Mayor que"
+    less_than: "Menor que"
+    main_content: "Implementa %{model}#main_content para mostrar contenido."
+    logout: "Desconectar"
+    powered_by: "Powered by %{active_admin} %{version}"
+    sidebars:
+      filters: "Filtros"
+    pagination:
+      empty: "No hay %{model}"
+      one: "Se muestra <b>1</b> %{model}"
+      one_page: "Se muestran <b> %{n}</b> %{model}"
+      multiple: "Se muestran %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> de <b>%{total}</b> en total"
+      entry:
+        one: "entrada"
+        other: "entradas"
+    any: "Qualquier"
+    blank_slate:
+      content: "Aún no hay ningún %{resource_name}."
+      link: "Crear uno/a"
+    batch_actions:
+      button_label: "acciones por lotes"
+      delete_confirmation: "¿Estas seguro de que desea eliminar estos %{plural_model}? Esta acción no se puede deshacer."
+      succesfully_destroyed:
+        one: "Se ha eliminado 1 %{model}"
+        other: "Se han eliminado %{count} %{plural_model}"
+      selection_toggle_explanation: "(Cambio de selección)"
+      link: "crear una"
+      action_label: "%{title} seleccionado"
+      labels:
+        destroy: "borrar"
+    comments:
+      body: "Cuerpo"
+      author: "autor"
+      title: "comentario"
+      add: "Añadir comentario"
+      resource: "Recurso"
+      no_comments_yet: "No hay comentarios"
+      title_content: "comentarios (%{count})"
+      errors:
+        empty_text: "El comentario no se ha guardado, el texto estaba vacio."
+    devise:
+      login:
+        title: "iniciar sessió"
+        remember_me: "Recordar"
+        submit: "iniciar sessió"
+      reset_password:
+        title: "Heu perdut la contrasenya?"
+        submit: "Restablir la contrasenya"
+      change_password:
+        title: "Canvieu la contrasenya"
+        submit: "Canviar la contrasenya"
+      links:
+        sign_in: "Registrar"
+        forgot_your_password: "Heu perdut la contrasenya?"
+        sign_in_with_omniauth_provider: "Connecta't amb %{provider}"
+    access_denied:
+      message: "No està autoritzar per a realitzar esta acció."
+    index_list:
+      table: "Taula"
+      block: "Llista"
+      grid: "Graella"
+      blog: "Bloc"
+
+       

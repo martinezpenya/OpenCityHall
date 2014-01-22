@@ -1,0 +1,11 @@
+es:
+  activerecord:
+    models:
+      omic_age:
+        one: "Edad"
+        other: "Edades"
+    attributes:
+      omic_age:
+        description: "Descripción"
+        created_at: "Creado el"
+        updated_at: "Modificado el"

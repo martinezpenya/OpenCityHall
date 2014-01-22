@@ -1,0 +1,11 @@
+es:
+  activerecord:
+    models:
+      omic_mean:
+        one: "Medio"
+        other: "Medios"
+    attributes:
+      omic_mean:
+        description: "Description"
+        created_at: "Created at"
+        updated_at: "Modified at"

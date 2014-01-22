@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  year: 1
+  datetime: 2013-06-05 14:36:22
+  facts: MyText
+  documents: MyText
+  pretensions: MyText
+  notes: MyText
+  omic_petitioner_id: 
+  omic_reclaimed_id: 
+  omic_result_id: 
+  omic_admin_user_id: 
+
+two:
+  year: 1
+  datetime: 2013-06-05 14:36:22
+  facts: MyText
+  documents: MyText
+  pretensions: MyText
+  notes: MyText
+  omic_petitioner_id: 
+  omic_reclaimed_id: 
+  omic_result_id: 
+  omic_admin_user_id: 

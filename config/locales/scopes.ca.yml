@@ -1,0 +1,30 @@
+ca:
+  custom:
+    state:
+      male:
+        open: 
+          one: "Obert"
+          other: "Oberts"
+        closed:
+          one: "Tancat"
+          other: "Tancats"
+      female:
+        open:
+          one: "Oberta"
+          other: "Obertes"
+        closed:
+          one: "Tancada"
+          other: "Tancades"
+
+  active_admin:
+    scopes:
+      all: "Tots/es"
+      open: "Obert/es"
+      closed: "Tancat/des"
+      anyactual: "Enguany"
+      anyanterior: "L'any anterior"
+      chozen:
+        no_results_text: "No hi ha cap coincidència amb "
+      select2:
+        placeholder: "Clic per a seleccionar"
+          

@@ -1,0 +1,11 @@
+ca:
+  activerecord:
+    models:
+      omic_age:
+        one: "Edat"
+        other: "Edats"
+    attributes:
+      omic_age:
+        description: "Descripció"
+        created_at: "Creat el"
+        updated_at: "Modificat el"

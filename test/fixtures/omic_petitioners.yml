@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: 
+  surname1: 
+  surname2: 
+  common_id_type_id: 
+  doc_id: 
+  address: 
+  cp: 
+  town: 
+  province: 
+  phone1: 
+  phone2: 
+  email: 
+  notes: 
+  omic_age_id: 
+  sex: false
+
+two:
+  name: 
+  surname1: 
+  surname2: 
+  common_id_type_id: 
+  doc_id: 
+  address: 
+  cp: 
+  town: 
+  province: 
+  phone1: 
+  phone2: 
+  email: 
+  notes: 
+  omic_age_id: 
+  sex: false

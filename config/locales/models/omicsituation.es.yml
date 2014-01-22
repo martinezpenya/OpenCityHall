@@ -1,0 +1,12 @@
+es:
+  activerecord:
+    models:
+      omic_situation:
+        one: "Situación"
+        other: "Situaciones"
+    attributes:
+      omic_situation:
+        name: "Nombre"
+        description: "Descripción"
+        created_at: "Creado el"
+        updated_at: "Modificado el"

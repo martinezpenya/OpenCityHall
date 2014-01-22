@@ -1,0 +1,12 @@
+en:
+  activerecord:
+    models:
+      admin_user:
+        one: "Users"
+        other: "Users"
+    attributes:
+      omic_service:
+        name: "Name"
+        description: "e-mail"
+        created_at: "Created at"
+        updated_at: "Modified at"

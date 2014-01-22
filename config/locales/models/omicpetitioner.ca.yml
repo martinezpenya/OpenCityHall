@@ -1,0 +1,25 @@
+ca:
+  activerecord:
+    models:
+      omic_petitioner: 
+        one: "Peticionari"
+        other: "Peticionaris"
+    attributes:
+      omic_petitioner:
+        firstname: "Nom"
+        surname1: "1r cognom"
+        surname2: "2n cognom"
+        common_id_type: "Tipus d'identificador"
+        id_doc: "Identificador"
+        address: "Adreça"
+        cp: "Codi Postal"
+        town: "Ciutat"
+        province: "Provincia"
+        phone1: "Telèfon 1"
+        phone2: "Telèfon 2"
+        email: "Correu-e"
+        notes: "Notes"
+        sex: "Sexe"
+        omic_age: "Edat"
+        created_at: "Creat el"
+        updated_at: "Modificat el"

@@ -1,0 +1,21 @@
+es:
+  activerecord:
+    models:
+      omic_query: 
+        one: "Consulta"
+        other: "Consultas"
+        messages:
+          closed: "La consulta %{omic_query_id} se ha cerrado correctamente."
+        actions:
+          close: "cerrar"    
+    attributes:
+      omic_query:
+        datetime: "Fecha"
+        notes: "Notas"
+        open: "abierta?"
+        omic_sector: "Sector"
+        omic_service: "Servicio"
+        omic_reason: "Motivo"
+        admin_user: "Usuario"
+        created_at: "Creado el"
+        updated_at: "Modificado el"

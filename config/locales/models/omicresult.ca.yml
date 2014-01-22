@@ -1,0 +1,12 @@
+ca:
+  activerecord:
+    models:
+      omic_result:
+        one: "Resultat"
+        other: "Resultats"
+    attributes:
+      omic_result:
+        name: "Nom"
+        description: "Descripció"
+        created_at: "Creat el"
+        updated_at: "Modificat el"

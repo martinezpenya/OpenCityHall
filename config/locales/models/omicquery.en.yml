@@ -1,0 +1,21 @@
+ca:
+  activerecord:
+    models:
+      omic_query: 
+        one: "Query"
+        other: "Queries"
+        messages:
+          closed: "The query %{omic_query_id} has been closed successfully."
+        actions:
+          close: "close"    
+    attributes:
+      omic_query:
+        datetime: "Date"
+        notes: "Notes"
+        open: "Open?"
+        omic_sector: "Sector"
+        omic_service: "Service"
+        omic_reason: "Reason"
+        admin_user: "User"
+        created_at: "Created at"
+        updated_at: "Modified at"

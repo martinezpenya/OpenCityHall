@@ -1,0 +1,30 @@
+es:
+  activerecord:
+    models:
+      omic_claim: 
+        one: "Reclamación"
+        other: "Reclamaciones"
+        messages:
+          closed: "La reclamación %{omic_claim_id} se ha cerrado correctamente."
+        actions:
+          close: "cerrar"
+          ofici: "oficio"  
+          reclamacio: "imprimir"  
+    attributes:
+      omic_claim:
+        year: "Año"
+        datetime: "Fecha"
+        facts: "Hechos"
+        documents: "Documentación que aporta"
+        pretensions: "Pretensión"
+        notes: "Notas"
+        open: "Abierta?"
+        omic_petitioner: "Reclamante"
+        omic_reclaimed: "Reclamado"
+        omic_result: "Resultado"
+        admin_user: "Usuario"
+        omic_sector: "Sector"
+        omic_reason: "Motivo"
+        omic_mean: "Medio"
+        created_at: "Creado el"
+        updated_at: "Modificado el"

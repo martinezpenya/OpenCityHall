@@ -1,0 +1,23 @@
+ca:
+  activerecord:
+    models:
+      omic_reclaimed: 
+        one: "Reclaimed"
+        other: "Reclaimeds"
+    attributes:
+      omic_reclaimed:
+        social_name: "Social name"
+        comercial_name: "Comercial name"
+        common_id_type: "Id type"
+        id_doc: "Id"
+        address: "Adress"
+        cp: "Postal code"
+        town: "City"
+        province: "Province"
+        phone1: "Phone 1"
+        phone2: "Phone 2"
+        fax: "Fax"
+        email: "e-mail"
+        notes: "Notes"
+        created_at: "Created at"
+        updated_at: "Updated at"

@@ -1,0 +1,29 @@
+en:
+  custom:
+    state:
+      male:
+        open: 
+          one: "Open"
+          other: "Open"
+        closed:
+          one: "Closed"
+          other: "Closed"
+      female:
+        open:
+          one: "Open"
+          other: "Open"
+        closed:
+          one: "Closed"
+          other: "Closed"
+
+  active_admin:
+    scopes:
+      all: "All"
+      open: "Open"
+      closed: "Closed"
+      anyactual: "This year"
+      anyanterior: "Past year"
+      chozen:
+        no_results_text: "No hi ha cap coincidència amb "
+      select2:
+        placeholder: "Clic per a seleccionar"

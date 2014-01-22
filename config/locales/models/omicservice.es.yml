@@ -1,0 +1,12 @@
+es:
+  activerecord:
+    models:
+      omic_service:
+        one: "Servicio"
+        other: "Servicios"
+    attributes:
+      omic_service:
+        name: "Nombre"
+        description: "Descripción"
+        created_at: "Creado el"
+        updated_at: "Modificado el"

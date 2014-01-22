@@ -1,0 +1,21 @@
+.datepicker input[type="text"]
+{
+    background: url("/assets/active_admin/datepicker/datepicker-input-icon.png") no-repeat scroll 100% 7px white;
+    padding-right: 27px;
+    width: 71px !important;
+}
+
+body.active_admin #footer
+{
+	text-align: right;
+}
+
+body.active_admin {
+  .chzn-container {
+    &.chzn-container-multi {
+      width: auto !important;
+      min-width: 175px;
+    }
+    .chzn-results li {white-space: nowrap;}
+  }
+}
