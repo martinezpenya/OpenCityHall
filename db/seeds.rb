@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+# ruby encoding: utf-8
+OmicSituation.create(id: '1', name: 'Registro', description: 'Registro de Entrada')
+OmicSituation.create(id: '2', name: 'Firma', description: 'Pendiente de firma del concejal delegado')
