@@ -37,7 +37,10 @@ gem 'cancan'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
 
 # To use debugger
 # gem 'debugger'
