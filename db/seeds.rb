@@ -8,3 +8,6 @@
 # ruby encoding: utf-8
 OmicSituation.create(id: '1', name: 'Registro', description: 'Registro de Entrada')
 OmicSituation.create(id: '2', name: 'Firma', description: 'Pendiente de firma del concejal delegado')
+OmicSituation.create(id: '3', name: 'Avisado', description: 'Se ha avisado al reclamante para que recoja la documentación')
+OmicSituation.create(id: '4', name: 'Enviada', description: 'Enviada la reclamación al Reclamado')
+OmicSituation.create(id: '5', name: 'Entregada', description: 'Documentación entregada al Reclamante')
