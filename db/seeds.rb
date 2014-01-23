@@ -41,6 +41,6 @@ OmicSituation.create(id: '3', name: 'Avisado', description: 'Se ha avisado al re
 OmicSituation.create(id: '4', name: 'Enviada', description: 'Enviada la reclamación al Reclamado')
 OmicSituation.create(id: '5', name: 'Entregada', description: 'Documentación entregada al Reclamante')
 
-Common_id_type.create(id: '1', name: 'DNI')
-Common_id_type.create(id: '2', name: 'NIE')
-Common_id_type.create(id: '3', name: 'CIF')
+CommonIdType.create(id: '1', name: 'DNI')
+CommonIdType.create(id: '2', name: 'NIE')
+CommonIdType.create(id: '3', name: 'CIF')
