@@ -2,7 +2,7 @@ class CreateOmicClaims < ActiveRecord::Migration
   def change
     create_table :omic_claims do |t|
       t.integer :year
-      t.datetime :date
+      t.datetime :datetime
       t.text :facts
       t.text :documents
       t.text :pretensions
