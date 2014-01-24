@@ -41,7 +41,7 @@ es:
       entry:
         one: "entrada"
         other: "entradas"
-    any: "Qualquier"
+    any: "Cualquier"
     blank_slate:
       content: "Aún no hay ningún %{resource_name}."
       link: "Crear uno/a"
