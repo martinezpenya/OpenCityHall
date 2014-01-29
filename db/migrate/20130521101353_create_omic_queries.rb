@@ -1,7 +1,7 @@
 class CreateOmicQueries < ActiveRecord::Migration
   def change
     create_table :omic_queries do |t|
-      t.datetime :date
+      t.datetime :datetime
       t.text :notes
 
       t.timestamps
