@@ -37,7 +37,7 @@ include ActionView::Helpers::NumberHelper
       ##Year/ID
       odt.add_field(:YEAR, @claim.year.to_s)
       odt.add_field(:ID, @claim.id.to_s)
-      odt.add_field(:DATE, I18n.l(@claim.datetime, :format => :long))
+      odt.add_field(:DATE, I18n.l(@claim.datetime, :format => :short))
       odt.add_field(:USER, @claim.admin_user.name.to_s)    
   
       ##Petitioner
