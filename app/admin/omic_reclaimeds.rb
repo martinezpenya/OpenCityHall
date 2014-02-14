@@ -61,6 +61,7 @@ ActiveAdmin.register OmicReclaimed do
       f.input :province
       f.input :phone1
       f.input :phone2
+      f.input :fax
       f.input :email
       f.input :notes
     end
