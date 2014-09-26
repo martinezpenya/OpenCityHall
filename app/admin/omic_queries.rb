@@ -58,7 +58,7 @@ ActiveAdmin.register OmicQuery do
       ( !item.omic_reason.nil? ? ( link_to item.omic_reason.name, admin_omic_reason_path(item.omic_reason) ) : ("") ) 
     end
     column I18n.t("activerecord.attributes.omic_query.open"), :sortable => :open do |item| 
-      status_tag (item.open ? I18n.t("custom.state.female.open", :count => 1) : I18n.t("custom.state.female.closed", :count => 1)), (item.open ? :ok : :error)
+      status_tag((item.open ? I18n.t("custom.state.female.open", :count => 1) : I18n.t("custom.state.female.closed", :count => 1)), (item.open ? :ok : :error))
     end
     actions do |query|
       if query.open?
@@ -83,7 +83,7 @@ ActiveAdmin.register OmicQuery do
         row(I18n.t("activerecord.models.omic_sector.one")) { !omic_query.omic_sector.nil? ? ( link_to omic_query.omic_sector.description, admin_omic_sector_path(omic_query.omic_sector) ) : ("") }
         row(I18n.t("activerecord.models.omic_service.one")) { !omic_query.omic_service.nil? ? ( link_to omic_query.omic_service.description, admin_omic_service_path(omic_query.omic_service) ) : ("") }
         row(I18n.t("activerecord.models.omic_reason.one")) { !omic_query.omic_reason.nil? ? ( link_to omic_query.omic_reason.description, admin_omic_service_path(omic_query.omic_reason) ) : ("") }       
-        row(I18n.t("activerecord.attributes.omic_query.open")) { status_tag (omic_query.open ? "Obert" : "Tancat"), (omic_query.open ? :ok : :error) }     
+        row(I18n.t("activerecord.attributes.omic_query.open")) { status_tag((omic_query.open ? "Obert" : "Tancat"), (omic_query.open ? :ok : :error)) }     
       end
     end
   end

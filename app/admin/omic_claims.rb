@@ -27,7 +27,7 @@ include ActionView::Helpers::NumberHelper
       odt.add_field(:REGIDOR, Settings.regidor)
       
       report_file_name = odt.generate
-      send_file (report_file_name)
+      send_file(report_file_name)
     end
   end
   
@@ -81,7 +81,7 @@ include ActionView::Helpers::NumberHelper
       odt.add_field(:REGIDOR, Settings.regidor)
       
       report_file_name = odt.generate
-      send_file (report_file_name)
+      send_file(report_file_name)
     end
   end
 
@@ -153,7 +153,7 @@ ActiveAdmin.register OmicClaim do
   index do
     selectable_column
     column I18n.t("activerecord.models.omic_claim.other"), :sortable => :id do |item|
-     link_to (item.year.to_s + "/" + item.id.to_s), admin_omic_claim_path(item.id)
+     link_to((item.year.to_s + "/" + item.id.to_s), admin_omic_claim_path(item.id))
     end
     column I18n.t("activerecord.attributes.omic_claim.datetime"), :sortable => :datetime do |item|
       I18n.l(item.datetime, :format => :short)
@@ -165,7 +165,7 @@ ActiveAdmin.register OmicClaim do
       ( !item.omic_reclaimed.nil? ? ( link_to item.omic_reclaimed.to_s, admin_omic_reclaimed_path(item.omic_reclaimed) ) : ("") )
     end
     column I18n.t("activerecord.attributes.omic_claim.facts") do |item|
-      raw ("<pan title='#{item.facts}'> #{truncate(item.facts, omision: "...", length: 250)} </span>") 
+      raw("<pan title='#{item.facts}'> #{truncate(item.facts, omision: "...", length: 250)} </span>") 
     end
     column I18n.t("activerecord.models.omic_situation.one"), :sortable => :omic_situation do |item|
       ( !item.omic_situation.nil? ? ( link_to item.omic_situation.to_s, admin_omic_situation_path(item.omic_situation) ) : ("") )
@@ -174,7 +174,7 @@ ActiveAdmin.register OmicClaim do
       ( !item.omic_result.nil? ? ( link_to item.omic_result.to_s, admin_omic_result_path(item.omic_result) ) : ("") )
     end
     column I18n.t("activerecord.attributes.omic_claim.open"), :sortable => :open do |item| 
-      status_tag (item.open ? I18n.t("custom.state.female.open", :count => 1) : I18n.t("custom.state.female.closed", :count => 1)), (item.open ? :ok : :error)
+      status_tag((item.open ? I18n.t("custom.state.female.open", :count => 1) : I18n.t("custom.state.female.closed", :count => 1)), (item.open ? :ok : :error))
     end
     actions do |claim|
       if claim.open?
@@ -207,7 +207,7 @@ ActiveAdmin.register OmicClaim do
         row(I18n.t("activerecord.attributes.omic_claim.notes")) { omic_claim.notes}
         row(I18n.t("activerecord.models.omic_situation.one")) { omic_claim.omic_situation}     
         row(I18n.t("activerecord.models.omic_result.one")) { omic_claim.omic_result}     
-        row(I18n.t("activerecord.attributes.omic_claim.open")) { status_tag (omic_claim.open ? "Obert" : "Tancat"), (omic_claim.open ? :ok : :error) }            
+        row(I18n.t("activerecord.attributes.omic_claim.open")) { status_tag((omic_claim.open ? "Obert" : "Tancat"), (omic_claim.open ? :ok : :error))}           
       end
     end
   end
@@ -215,7 +215,7 @@ ActiveAdmin.register OmicClaim do
   sidebar I18n.t("activerecord.models.omic_claim.other") + "/" + I18n.t("activerecord.models.omic_petitioner.one"), :only => :show do
     table_for omic_claim.omic_petitioner.omic_claims do |c|
       c.column("id") { |claim| link_to claim.display_name, admin_omic_claim_path(claim) }
-      c.column("Status") { |claim| status_tag (claim.open ? "Open" : "closed"), (claim.open ? :ok : :error) }
+      c.column("Status") { |claim| status_tag((claim.open ? "Open" : "closed"), (claim.open ? :ok : :error)) }
       c.column("Title") { |claim| link_to claim.omic_reclaimed.to_s, admin_omic_reclaimed_path(claim.omic_reclaimed) }
     end
   end
@@ -223,7 +223,7 @@ ActiveAdmin.register OmicClaim do
   sidebar I18n.t("activerecord.models.omic_claim.other") + "/" + I18n.t("activerecord.models.omic_reclaimed.one"), :only => :show do
     table_for omic_claim.omic_reclaimed.omic_claims do |c|
       c.column("id") { |claim| link_to claim.display_name, admin_omic_claim_path(claim) }
-      c.column("Status") { |claim| status_tag (claim.open ? "Open" : "closed"), (claim.open ? :ok : :error) }
+      c.column("Status") { |claim| status_tag((claim.open ? "Open" : "closed"), (claim.open ? :ok : :error))}
       c.column("Title") { |claim| link_to claim.omic_petitioner.to_s, admin_omic_petitioner_path(claim.omic_petitioner) }
     end
   end

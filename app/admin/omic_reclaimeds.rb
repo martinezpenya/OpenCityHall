@@ -5,7 +5,7 @@ ActiveAdmin.register OmicReclaimed do
   index do
     selectable_column
     column I18n.t("activerecord.attributes.omic_reclaimed.id_doc"), :sortable => :id_doc do |item|
-      link_to (item.common_id_type.to_s + " " + item.id_doc.to_s), admin_omic_reclaimed_path(item.id)
+      link_to((item.common_id_type.to_s + " " + item.id_doc.to_s), admin_omic_reclaimed_path(item.id))
     end 
     column I18n.t("activerecord.attributes.omic_reclaimed.social_name"), :social_name
     column I18n.t("activerecord.attributes.omic_reclaimed.comercial_name"), :comercial_name
@@ -44,7 +44,7 @@ ActiveAdmin.register OmicReclaimed do
   sidebar "Other claims for this Reclaimed", :only => :show do
     table_for omic_reclaimed.omic_claims do |c|
       c.column("id") { |claim| link_to claim.display_name, admin_omic_claim_path(claim) }
-      c.column("Status") { |claim| status_tag (claim.open ? "Open" : "closed"), (claim.open ? :ok : :error) }
+      c.column("Status") { |claim| status_tag((claim.open ? "Open" : "closed"), (claim.open ? :ok : :error)) }
       c.column("Title") { |claim| link_to claim.omic_petitioner.to_s, admin_omic_petitioner_path(claim.omic_petitioner) }
     end
   end
