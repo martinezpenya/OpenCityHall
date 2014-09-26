@@ -1,5 +1,5 @@
 class OmicMean < ActiveRecord::Base
-  attr_accessible :description
+##  attr_accessible :description
   has_many :omic_claims
   
   def display_name

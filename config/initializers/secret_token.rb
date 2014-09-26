@@ -4,4 +4,5 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-OpenCityHall::Application.config.secret_token = '91a8be32a0d3abc0c3804996fde2925266f58d9943d9e8e76c40d1a67f60f7347cc67b7583e0eab151c73089a5c44a433c6af49b90b5509cdff46c8aeeab4420'
+OpenCityHall::Application.config.secret_token = '9b2e69b0c8c316b53a42733fd9dcf3c647c3dcf7919b9574b81f6c1382ef8cc0b9ffdb8e1533ba0e8ffe8c50510687826a247a7428d6079cf8202c2d8899c0cb'
+OpenCityHall::Application.config.secret_key_base = 'secret value'

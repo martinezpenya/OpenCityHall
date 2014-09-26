@@ -1,5 +1,5 @@
 class OmicPetitioner < ActiveRecord::Base
-  attr_accessible :common_id_type_id, :id_doc, :firstname, :surname1, :surname2, :address, :cp, :town, :province, :phone1, :phone2, :email, :notes, :sex, :omic_age_id
+##  attr_accessible :common_id_type_id, :id_doc, :firstname, :surname1, :surname2, :address, :cp, :town, :province, :phone1, :phone2, :email, :notes, :sex, :omic_age_id
   has_many :omic_claims
   belongs_to :common_id_type
   belongs_to :omic_age

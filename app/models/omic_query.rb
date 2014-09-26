@@ -1,5 +1,5 @@
 class OmicQuery < ActiveRecord::Base
-  attr_accessible :datetime, :notes, :open, :omic_sector_id, :omic_service_id, :omic_reason_id, :admin_user_id
+##  attr_accessible :datetime, :notes, :open, :omic_sector_id, :omic_service_id, :omic_reason_id, :admin_user_id
   belongs_to :omic_sector
   belongs_to :omic_service
   belongs_to :omic_reason

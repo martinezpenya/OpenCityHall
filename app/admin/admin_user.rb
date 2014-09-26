@@ -10,7 +10,7 @@ ActiveAdmin.register AdminUser do
     column :sign_in_count
     column :admin    
     if authorized?(:manage, AdminUser)         
-      default_actions
+      actions
     end                   
   end                                 
 

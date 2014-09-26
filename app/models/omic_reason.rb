@@ -1,5 +1,5 @@
 class OmicReason < ActiveRecord::Base
-  attr_accessible :description, :name
+##  attr_accessible :description, :name
   has_many :omic_queries
   has_many :omic_claims
   

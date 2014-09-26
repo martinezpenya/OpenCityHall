@@ -1,5 +1,5 @@
 class OmicSector < ActiveRecord::Base
-  attr_accessible :description, :response_time
+##  attr_accessible :description, :response_time
   has_many :omic_queries
   has_many :omic_claims
    

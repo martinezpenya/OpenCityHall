@@ -1,5 +1,5 @@
 class OmicResult < ActiveRecord::Base
-  attr_accessible :name, :description
+##  attr_accessible :name, :description
   has_many :omic_claims
   
   def display_name

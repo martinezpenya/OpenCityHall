@@ -1,5 +1,5 @@
 class OmicReclaimed < ActiveRecord::Base
-  attr_accessible :address, :common_id_type_id, :cp, :id_doc, :email, :fax, :notes, :phone1, :phone2, :province, :social_name, :comercial_name, :town
+##  attr_accessible :address, :common_id_type_id, :cp, :id_doc, :email, :fax, :notes, :phone1, :phone2, :province, :social_name, :comercial_name, :town
   has_many :omic_claims
   belongs_to :common_id_type
 
