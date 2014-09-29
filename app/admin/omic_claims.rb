@@ -185,9 +185,9 @@ ActiveAdmin.register OmicClaim do
   
   filter :id
   filter :datetime
-  filter :omic_petitioner, :input_html => {:class => 'select2able' }
-  filter :omic_reclaimed, :input_html => {:class => 'select2able' }
-  filter :omic_resultat, :input_html => {:class => 'select2able' }
+  filter :omic_petitioner
+  filter :omic_reclaimed
+  filter :omic_resultat
   filter :open
   filter :notes
   
@@ -230,8 +230,9 @@ ActiveAdmin.register OmicClaim do
   
   form  do |f|
     f.inputs do
-      f.input :datetime, :as => :datepicker, :dateformat => :short
-      f.input :omic_petitioner, :input_html => {:class => 'select2able' }
+      f.input :datetime, :as => :datepicker, :input_html => {:style => 'width: 100px'}
+      
+      f.input :omic_petitioner, as: :select2, :input_html => {:style => 'width: 450px'}
       
       #nested form
       #f.inputs :for => [:omic_petitioner, (f.object.omic_petitioner || f.object.build_omic_petitioner)] do |a| 
@@ -239,18 +240,18 @@ ActiveAdmin.register OmicClaim do
       #  a.input :address
       #  a.input :id_doc
       #end
-      f.input :omic_reclaimed, :input_html => {:class => 'select2able' } #, :hint=>"A qui reclama?"
-      f.input :omic_sector, :input_html => {:class => 'select2able' }
-      f.input :omic_mean, :input_html => {:class => 'select2able' }
-      f.input :omic_reason, :input_html => {:class => 'select2able' }
+      f.input :omic_reclaimed, as: :select2, :input_html => {:style => 'width: 450px'} #, :hint=>"A qui reclama?"
+      f.input :omic_sector, as: :select2, :input_html => {:style => 'width: 200px'}
+      f.input :omic_mean, as: :select2, :input_html => {:style => 'width: 200px'}
+      f.input :omic_reason, as: :select2, :input_html => {:style => 'width: 350px'}
       f.input :facts, :input_html => {:style => 'height: 100px'}
       f.input :pretensions, :input_html => {:style => 'height: 100px'}
       f.input :documents, :input_html => {:style => 'height: 50px'}
       f.input :notes, :input_html => {:style => 'height: 100px'}
-      f.input :omic_situation, :input_html => {:class => 'select2able' }
-      f.input :omic_result, :input_html => {:class => 'select2able' }
+      f.input :omic_situation, as: :select2, :input_html => {:style => 'width: 150px'}
+      f.input :omic_result, as: :select2, :input_html => {:style => 'width: 250px'}
       
-      f.input :open, :as => :select, collection: [['Si', 'true'], ['No', 'false']]
+      f.input :open, :as => :select2, collection: [['Si', 'true'], ['No', 'false']], :input_html => {:style => 'width: 150px'}
     end
     f.actions
   end 

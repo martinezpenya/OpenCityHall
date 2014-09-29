@@ -67,7 +67,7 @@ ActiveAdmin.register OmicPetitioner do
       f.input :firstname
       f.input :surname1
       f.input :surname2
-      f.input :common_id_type, :input_html => {:style => 'width: 150px', :class => 'select2able' }
+      f.input :common_id_type, as: :select2, :input_html => {:style => 'width: 150px'}
       f.input :id_doc, :input_html => { :maxlength => 10  }
       f.input :address
       f.input :cp
@@ -77,8 +77,8 @@ ActiveAdmin.register OmicPetitioner do
       f.input :phone2
       f.input :email
       f.input :notes
-      f.input :sex, :as => :select, collection: [['Home', 'true'], ['Dona', 'false']], :input_html => {:style => 'width: 150px', :class => 'select2able' }
-      f.input :omic_age, :input_html => {:style => 'width: 150px', :class => 'select2able' }
+      f.input :sex, :as => :select2, collection: [['Home', 'true'], ['Dona', 'false']], :input_html => {:style => 'width: 150px' }
+      f.input :omic_age, :as => :select2, :input_html => {:style => 'width: 150px'}
     end
     f.actions
   end 

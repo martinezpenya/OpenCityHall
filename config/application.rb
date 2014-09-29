@@ -61,12 +61,23 @@ module OpenCityHall
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     
-    config.before_configuration do
-      I18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
-      I18n.locale = :es
-      I18n.default_locale = :es
-      I18n.reload!
-    end     
+#    I18n.config.enforce_available_locales = true
+#    config.i18n.enforce_available_locales = true
+#
+#    config.before_configuration do
+      I18n.load_path += Dir[Rails.root.join('config', 'locales','models', '*.{rb,yml}').to_s]
+#      I18n.locale = :ca
+#      I18n.default_locale = :ca
+      config.i18n.load_path += Dir[Rails.root.join('config', 'locales','models', '*.{rb,yml}').to_s]
+#      config.i18n.locale = :ca
+#      # bypasses rails bug with i18n in production\
+#      I18n.reload!
+#      config.i18n.reload!
+#    end
+#    
+#    config.i18n.locale = :ca
+#    config.i18n.default_locale = :ca
          
   end
+
 end

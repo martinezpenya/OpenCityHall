@@ -69,9 +69,9 @@ ActiveAdmin.register OmicQuery do
   
   filter :id
   filter :datetime
-  filter :omic_sector, :input_html => {:class => 'select2able' }
-  filter :omic_service, :input_html => {:class => 'select2able' }
-  filter :omic_reason, :input_html => {:class => 'select2able' }
+  filter :omic_sector
+  filter :omic_service
+  filter :omic_reason
   filter :notes
   filter :open
   
@@ -90,16 +90,16 @@ ActiveAdmin.register OmicQuery do
   
   form  do |f|
     f.inputs do
-      f.input :datetime, :as => :datepicker
-      f.input :omic_sector, :input_html => {:class => 'select2able' }
-      f.input :omic_service, :input_html => {:class => 'select2able' }        
+      f.input :datetime, :as => :datepicker, :input_html => {:style => 'width: 100px'}
+      f.input :omic_sector, :as => :select2, :input_html => {:style => 'width: 250px'}
+      f.input :omic_service, :as => :select2, :input_html => {:style => 'width: 250px'}
       f.input :notes
-      f.input :omic_reason, :input_html => {:class => 'select2able' }
-      f.input :open, :as => :select, collection: [['Si', 'true'], ['No', 'false']]
-      f.input :admin_user
+      f.input :omic_reason, :as => :select2, :input_html => {:style => 'width: 350px'}
+      f.input :open, :as => :select2, collection: [['Si', 'true'], ['No', 'false']], :input_html => {:style => 'width: 100px'}
+      f.input :admin_user, :as => :select2, :input_html => {:style => 'width: 250px'}
       ### chosen and select2 samples
       #      f.input :omic_sector, :input_html =>  {  :class => 'chzn-select', :width => 'auto', "data-placeholder" => 'Click' }
-      #      f.input :omic_reason, :input_html => { :multiple => 'true', :style => 'width: 76%', :class => 'select2able' }
+      #      f.input :omic_reason, :input_html => { :multiple => 'true', :style => 'width: 76%'}
     end
     f.actions
   end 

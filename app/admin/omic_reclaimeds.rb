@@ -53,7 +53,7 @@ ActiveAdmin.register OmicReclaimed do
     f.inputs do
       f.input :social_name
       f.input :comercial_name
-      f.input :common_id_type, :input_html => {:style => 'width: 150px', :class => 'select2able' }
+      f.input :common_id_type, :as => :select2, :input_html => {:style => 'width: 150px'}
       f.input :id_doc, :input_html => { :maxlength => 10  }
       f.input :address
       f.input :cp

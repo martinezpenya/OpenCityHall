@@ -1,12 +1,18 @@
-en:
-  activerecord:
-    models:
-      admin_user:
-        one: "Users"
-        other: "Users"
-    attributes:
-      omic_service:
-        name: "Name"
-        description: "e-mail"
+--- 
+en: 
+  activerecord: 
+    attributes: 
+      admin_user: 
+        name: Name
         created_at: "Created at"
+        email: e-mail
+        initials: Initials
+        current_sign_in_at: "current Login"
+        last_sign_in_at: "Last login"          
+        sign_in_count: "Login counts"
+        admin: "Administrador?"                
         updated_at: "Modified at"
+    models: 
+      admin_user: 
+        one: Users
+        other: Users

@@ -1,14 +1,14 @@
 ActiveAdmin.register AdminUser do
   config.comments = false
   
-  index do                            
-    column :name
-    column :initials
-    column :email                     
-    column :current_sign_in_at        
-    column :last_sign_in_at           
-    column :sign_in_count
-    column :admin    
+  index do          
+    column I18n.t("activerecord.attributes.admin_user.name"), :name
+    column I18n.t("activerecord.attributes.admin_user.initials"), :initials
+    column I18n.t("activerecord.attributes.admin_user.email"), :email                     
+    column I18n.t("activerecord.attributes.admin_user.current_sign_in_at"), :current_sign_in_at, :format => :short
+    column I18n.t("activerecord.attributes.admin_user.last_sign_in_at"), :last_sign_in_at           
+    column I18n.t("activerecord.attributes.admin_user.sign_in_count"), :sign_in_count
+    column I18n.t("activerecord.attributes.admin_user.admin"), :admin    
     if authorized?(:manage, AdminUser)         
       actions
     end                   

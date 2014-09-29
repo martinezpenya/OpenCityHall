@@ -125,7 +125,7 @@ ActiveAdmin.setup do |config|
   # You can add before, after and around filters to all of your
   # Active Admin resources and pages from here.
   #
-  config.before_filter :set_locale_from_browser
+  #config.before_filter :set_locale_from_browser
 
   #def set_admin_locale
   #  I18n.locale = :ca #TODO: De moment es carrega per la preferència d'idioma del navegador
@@ -146,10 +146,6 @@ ActiveAdmin.setup do |config|
   #
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
-  #config.register_javascript "active_admin/chosen.jquery.min.js"
-  #config.register_javascript "active_admin/select2.js"
-  #config.register_javascript "active_admin/select2_locale_#{I18n.locale}.js"
-  #config.register_javascript "active_admin/jquery.ui.datepicker-#{I18n.locale}.js"
   
   # == CSV options
   #
@@ -215,4 +211,7 @@ ActiveAdmin.setup do |config|
   #
   # config.filters = true
 
+  config.show_comments_in_menu = false
+
 end
+

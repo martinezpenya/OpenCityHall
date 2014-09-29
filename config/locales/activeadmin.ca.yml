@@ -81,6 +81,10 @@ ca:
         sign_in: "Registrar"
         forgot_your_password: "Heu perdut la contrasenya?"
         sign_in_with_omniauth_provider: "Connecta't amb %{provider}"
+      email:
+        title: "Usuari"
+      password:
+        title: "Contrasenya"
     access_denied:
       message: "No està autoritzar per a realitzar esta acció."
     index_list:

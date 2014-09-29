@@ -1,5 +1,9 @@
 class OmicClaim < ActiveRecord::Base
 ##  attr_accessible :datetime, :documents, :facts, :notes, :pretensions, :year, :open, :admin_user_id, :omic_sector_id, :omic_mean_id, :omic_reason_id, :omic_situation_id, :omic_petitioner_id, :omic_petitioner_attributes, :omic_reclaimed_id, :omic_result_id
+
+  :datetime
+  #validates :datetime, :presence => true
+
   belongs_to :omic_petitioner
   belongs_to :omic_reclaimed
   belongs_to :omic_result

@@ -1,13 +1,17 @@
-ca:
-  activerecord:
-    models:
-      admin_user:
-        one: "Usuari"
-        other: "Usuaris"
-    attributes:
-      omic_service:
-        name: "Nom"
-        description: "correu-e"
-        initials: "Inicials"
+ca: 
+  activerecord: 
+    attributes: 
+      admin_user: 
         created_at: "Creat el"
+        email: correu-e
+        initials: Inicials
+        name: Nom
+        current_sign_in_at: "Login actual"
+        last_sign_in_at: "Últim login"          
+        sign_in_count: "n. de logins"
+        admin: "Administrador?"                
         updated_at: "Modificat el"
+    models: 
+      admin_user: 
+        one: Usuari
+        other: Usuaris
