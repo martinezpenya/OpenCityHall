@@ -216,5 +216,12 @@ ActiveAdmin.setup do |config|
   # == Setting a Favicon
   #
   config.favicon = '/assets/favicon.ico'
+  
+  # Menu Master_Tables
+  config.namespace :admin do |admin|
+  admin.build_menu do |menu|
+    menu.add id: 'Master_tables', label: proc{ I18n.t("menu.master_tables") }, priority: 100
+  end
+end
 end
 

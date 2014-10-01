@@ -1,5 +1,6 @@
-ActiveAdmin.register OmicSituation do
-  menu :parent => I18n.t("menu.master_tables")
+ActiveAdmin.register OmicSituation  do
+  menu :parent => 'Master_tables'
+
   config.comments = false
   config.sort_order ="id_asc"
   index do

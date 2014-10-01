@@ -1,5 +1,6 @@
 ActiveAdmin.register CommonIdType do
-  menu :parent => I18n.t("menu.master_tables")
+  menu :parent => 'Master_tables'
+  
   config.comments = false
   
   index do

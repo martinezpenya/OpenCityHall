@@ -1,5 +1,5 @@
 ActiveAdmin.register OmicReclaimed do
-    #menu :parent => I18n.t("menu.master_tables")
+
   config.comments = false
   
   index do
