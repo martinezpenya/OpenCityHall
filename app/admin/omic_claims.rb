@@ -25,10 +25,11 @@ include ActionView::Helpers::NumberHelper
       
       ##Signature
       odt.add_field(:REGIDOR, Settings.regidor)
-      
-      report_file_name = odt.generate
-      send_file(report_file_name)
     end
+    
+    send_data report.generate,  type: 'application/vnd.oasis.opendocument.text',
+                                disposition: 'attachment',
+                                filename: "Ofici_#{@claim.year.to_s}_#{@claim.id.to_s}_#{I18n.locale}.odt"
   end
   
   def generate_claim_reclamacio(claim)
@@ -79,10 +80,11 @@ include ActionView::Helpers::NumberHelper
       
       ##Signature
       odt.add_field(:REGIDOR, Settings.regidor)
-      
-      report_file_name = odt.generate
-      send_file(report_file_name)
+              
     end
+    send_data report.generate,  type: 'application/vnd.oasis.opendocument.text',
+                                disposition: 'attachment',
+                                filename: "Reclamacio_#{@claim.year.to_s}_#{@claim.id.to_s}_#{I18n.locale}.odt"
   end
 
 ActiveAdmin.register OmicClaim do

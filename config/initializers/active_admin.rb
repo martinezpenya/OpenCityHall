@@ -212,6 +212,9 @@ ActiveAdmin.setup do |config|
   # config.filters = true
 
   config.show_comments_in_menu = false
-
+  
+  # == Setting a Favicon
+  #
+  config.favicon = '/assets/favicon.ico'
 end
 
