@@ -41,4 +41,4 @@
 set :stage, :production
 
 # Replace 127.0.0.1 with your server's IP address!
-server '172.30.1.44', user: 'deploy', roles: %w{web app}
+server 'ror.carlet.local', user: 'deploy', roles: %w{web app}
