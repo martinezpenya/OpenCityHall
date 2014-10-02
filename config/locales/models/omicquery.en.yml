@@ -16,6 +16,7 @@ en:
         omic_sector: "Sector"
         omic_service: "Service"
         omic_reason: "Reason"
+        omic_mean: "Mean"
         admin_user: "User"
         created_at: "Created at"
         updated_at: "Modified at"

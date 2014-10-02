@@ -4,14 +4,16 @@ class OmicQuery < ActiveRecord::Base
   belongs_to :omic_service
   belongs_to :omic_reason
   belongs_to :omic_reason
+  belongs_to :omic_mean
   belongs_to :admin_user
   
   accepts_nested_attributes_for :omic_sector
   accepts_nested_attributes_for :omic_service
-  accepts_nested_attributes_for :omic_reason  
+  accepts_nested_attributes_for :omic_reason 
+  accepts_nested_attributes_for :omic_mean
   accepts_nested_attributes_for :admin_user
   
-  validates :datetime, :notes, :omic_sector, :omic_service, :omic_reason, :admin_user, :presence => true
+  validates :datetime, :notes, :omic_sector, :omic_service, :omic_reason, :omic_mean, :admin_user, :presence => true
   
   #def close!(query)
   #  query_to_close=OmicQuery.find(query)
@@ -24,7 +26,6 @@ class OmicQuery < ActiveRecord::Base
     self.save
   end
 
- 
   def to_s
     self.id.to_s
   end

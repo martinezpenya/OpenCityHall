@@ -72,6 +72,7 @@ ActiveAdmin.register OmicQuery do
   filter :omic_sector
   filter :omic_service
   filter :omic_reason
+  filter :omic_mean
   filter :notes
   filter :open
   
@@ -82,7 +83,8 @@ ActiveAdmin.register OmicQuery do
         row(I18n.t("activerecord.attributes.omic_query.notes")) { omic_query.notes }
         row(I18n.t("activerecord.models.omic_sector.one")) { !omic_query.omic_sector.nil? ? ( link_to omic_query.omic_sector.description, admin_omic_sector_path(omic_query.omic_sector) ) : ("") }
         row(I18n.t("activerecord.models.omic_service.one")) { !omic_query.omic_service.nil? ? ( link_to omic_query.omic_service.description, admin_omic_service_path(omic_query.omic_service) ) : ("") }
-        row(I18n.t("activerecord.models.omic_reason.one")) { !omic_query.omic_reason.nil? ? ( link_to omic_query.omic_reason.description, admin_omic_service_path(omic_query.omic_reason) ) : ("") }       
+        row(I18n.t("activerecord.models.omic_reason.one")) { !omic_query.omic_reason.nil? ? ( link_to omic_query.omic_reason.description, admin_omic_reason_path(omic_query.omic_reason) ) : ("") }       
+        row(I18n.t("activerecord.models.omic_mean.one")) { !omic_query.omic_mean.nil? ? ( link_to omic_query.omic_mean.description, admin_omic_mean_path(omic_query.omic_mean) ) : ("") }       
         row(I18n.t("activerecord.attributes.omic_query.open")) { status_tag((omic_query.open ? "Obert" : "Tancat"), (omic_query.open ? :ok : :error)) }     
       end
     end
@@ -95,6 +97,7 @@ ActiveAdmin.register OmicQuery do
       f.input :omic_service, :as => :select2, :input_html => {:style => 'width: 250px'}
       f.input :notes
       f.input :omic_reason, :as => :select2, :input_html => {:style => 'width: 350px'}
+      f.input :omic_mean, :as => :select2, :input_html => {:style => 'width: 350px'}
       f.input :open, :as => :select2, collection: [['Si', 'true'], ['No', 'false']], :input_html => {:style => 'width: 100px'}
       f.input :admin_user, :as => :select2, :input_html => {:style => 'width: 250px'}
       ### chosen and select2 samples

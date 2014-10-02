@@ -16,6 +16,7 @@ es:
         omic_sector: "Sector"
         omic_service: "Servicio"
         omic_reason: "Motivo"
+        omic_mean: "Medio"
         admin_user: "Usuario"
         created_at: "Creado el"
         updated_at: "Modificado el"

@@ -16,6 +16,7 @@ ca:
         omic_sector: "Sector"
         omic_service: "Servici"
         omic_reason: "Motiu"
+        omic_mean: "Medi"
         admin_user: "Usuari"
         created_at: "Creat el"
         updated_at: "Modificat el"
