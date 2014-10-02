@@ -4,53 +4,51 @@ es:
     sessions: 
       signed_in: "Sesión iniciada correctamente."
       signed_out: "Sesión cerrada correctamente."
-  active_admin: 
-    devise: 
-      confirmations: 
-        confirmed: "Tu contraseña se ha cambiado correctamente. Se ha iniciado la sesión."
-        send_instructions: "En breve recibirá un correo electrónico con instrucciones sobre como confirmar su cuenta."
-        send_paranoid_instructions: "Si su direeción de correo electrónico existe en la base de datos, recibirá un correo electrónico con un enlace para reestablecer la contraseña."
-      email: 
-        title: Usuario
-      failure: 
-        already_authenticated: "Ya estás identificado."
-        inactive: "Su cuenta no está activada."
-        invalid: "Corro electrónico o contraseña inválidos."
-        invalid_token: "Codigo de autenticación inválido."
-        locked: "Tu cuenta está bloqueada."
-        timeout: "Tu sessión ha caducado. Por favor, vuelva a iniciar sesión para continuar."
-        unauthenticated: "Debes iniciar sesión o bien registrarte antes de continuar."
-        unconfirmed: "Debes confirmar tu cuenta antes de continuar."
-      mailer: 
-        confirmation_instructions: 
-          subject: "Instrucciones de confirmación"
-        reset_password_instructions: 
-          subject: "Instrucciones de regeneración de contraseña"
-        unlock_instructions: 
-          subject: "Instrucciones de desbloqueo"
-      omniauth_callbacks: 
-        failure: "No se ha podido autorizar la cuenta desde %{kind} porque %{reason}."
-        success: "Cuenta autorizada satisfactoriamente desde %{kind}."
-      password: 
-        title: Contraseña
-      passwords: 
-        send_instructions: "En breve recibirá un correo electrónico con instrucciones sobre como reestablecer su contraseña."
-        send_paranoid_instructions: "Si su direeción de correo electrónico existe en la base de datos, recibirá un correo electrónico con un enlace para reestablecer la contraseña."
-        updated: "Tu contraseña se ha cambiado correctamente. Se ha iniciado la sesión."
-        updated_not_active: "Tu contraseña se ha cambiado correctamente."
-      registrations: 
-        destroyed: "Adios! Tu cuenta se ha cancelado correctamente."
-        inactive_signed_up: "Ha sido registrado correctamente. Pero no hemos podido procesar su cuenta porqué %{reason}."
-        reasons: 
-          inactive: inactivo
-          locked: bloqueado
-          unconfirmed: "no confirmado"
-        signed_up: "Ha sido registrado correctamente."
-        updated: "Has actualizado tu cuenta correctamente."
-      unlocks: 
-        send_instructions: "En breve recibirá un correo electrónico con instrucciones sobre como desbloquear su cuenta."
-        send_paranoid_instructions: "Si su cuenta existe, recibirá un correu electrónico con instrucciones sobre como desbloquearlo."
-        unlocked: "Su cuenta se ha desbloqueado correctamente. Se ha iniciado la sesión."
+    failure: 
+      already_authenticated: "Ya estás identificado."
+      inactive: "Su cuenta no está activada."
+      invalid: "Corro electrónico o contraseña inválidos."
+      invalid_token: "Codigo de autenticación inválido."
+      locked: "Tu cuenta está bloqueada."
+      timeout: "Tu sessión ha caducado. Por favor, vuelva a iniciar sesión para continuar."
+      unauthenticated: "Debes iniciar sesión o bien registrarte antes de continuar."
+      unconfirmed: "Debes confirmar tu cuenta antes de continuar."
+    confirmations: 
+      confirmed: "Tu contraseña se ha cambiado correctamente. Se ha iniciado la sesión."
+      send_instructions: "En breve recibirá un correo electrónico con instrucciones sobre como confirmar su cuenta."
+      send_paranoid_instructions: "Si su direeción de correo electrónico existe en la base de datos, recibirá un correo electrónico con un enlace para reestablecer la contraseña."
+    email: 
+      title: Usuario
+    mailer: 
+      confirmation_instructions: 
+        subject: "Instrucciones de confirmación"
+      reset_password_instructions: 
+        subject: "Instrucciones de regeneración de contraseña"
+      unlock_instructions: 
+        subject: "Instrucciones de desbloqueo"
+    omniauth_callbacks: 
+      failure: "No se ha podido autorizar la cuenta desde %{kind} porque %{reason}."
+      success: "Cuenta autorizada satisfactoriamente desde %{kind}."
+    password: 
+      title: Contraseña
+    passwords: 
+      send_instructions: "En breve recibirá un correo electrónico con instrucciones sobre como reestablecer su contraseña."
+      send_paranoid_instructions: "Si su direeción de correo electrónico existe en la base de datos, recibirá un correo electrónico con un enlace para reestablecer la contraseña."
+      updated: "Tu contraseña se ha cambiado correctamente. Se ha iniciado la sesión."
+      updated_not_active: "Tu contraseña se ha cambiado correctamente."
+    registrations: 
+      destroyed: "Adios! Tu cuenta se ha cancelado correctamente."
+      inactive_signed_up: "Ha sido registrado correctamente. Pero no hemos podido procesar su cuenta porqué %{reason}."
+      reasons: 
+        inactive: inactivo
+        locked: bloqueado
+        unconfirmed: "no confirmado"
+      signed_up: "Ha sido registrado correctamente."
+      updated: "Has actualizado tu cuenta correctamente."
+    unlocks: 
+      send_instructions: "En breve recibirá un correo electrónico con instrucciones sobre como desbloquear su cuenta."
+      send_paranoid_instructions: "Si su cuenta existe, recibirá un correu electrónico con instrucciones sobre como desbloquearlo."
+      unlocked: "Su cuenta se ha desbloqueado correctamente. Se ha iniciado la sesión."
   errors: 
     messages: 
       already_confirmed: "ja está confirmado"

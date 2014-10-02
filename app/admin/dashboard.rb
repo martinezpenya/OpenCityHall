@@ -5,7 +5,8 @@ ActiveAdmin.register_page "Dashboard" do
   content :title => proc{ I18n.t("active_admin.dashboard") } do
     columns do
       column do
-        panel I18n.t("activerecord.models.omic_claim.other") + " en '" + OmicSituation.find(1).name + "'" do  
+#        panel I18n.t("activerecord.models.omic_claim.other") + " en '" + OmicSituation.find(1).name + "'" do
+        panel I18n.t("activerecord.models.omic_claim.other")  + " " + I18n.t("dashboard.register")  do            
           table_for OmicClaim.order('datetime desc').where('omic_situation_id=?',1) do |t|       
             t.column I18n.t("activerecord.models.omic_claim.other") do |item|
              link_to((item.year.to_s + "/" + item.id.to_s),admin_omic_claim_path(item.id))
@@ -34,7 +35,8 @@ ActiveAdmin.register_page "Dashboard" do
     end
     columns do
       column do
-        panel I18n.t("activerecord.models.omic_claim.other") + " en '" + OmicSituation.find(2).name + "'" do  
+#        panel I18n.t("activerecord.models.omic_claim.other") + " en '" + OmicSituation.find(2).name + "'" do  
+        panel I18n.t("activerecord.models.omic_claim.other") + " " + I18n.t("dashboard.signature")  do  
           table_for OmicClaim.order('datetime desc').where('omic_situation_id=?',2) do |t|       
             t.column I18n.t("activerecord.models.omic_claim.other") do |item|
              link_to((item.year.to_s + "/" + item.id.to_s), admin_omic_claim_path(item.id))
