@@ -100,9 +100,6 @@ ActiveAdmin.register OmicQuery do
       f.input :omic_mean, :as => :select2, :input_html => {:style => 'width: 350px'}
       f.input :open, :as => :select2, collection: [['Si', 'true'], ['No', 'false']], :input_html => {:style => 'width: 100px'}
       f.input :admin_user, :as => :select2, :input_html => {:style => 'width: 250px'}
-      ### chosen and select2 samples
-      #      f.input :omic_sector, :input_html =>  {  :class => 'chzn-select', :width => 'auto', "data-placeholder" => 'Click' }
-      #      f.input :omic_reason, :input_html => { :multiple => 'true', :style => 'width: 76%'}
     end
     f.actions
   end 
