@@ -13,6 +13,15 @@
 @import "active_admin/just_datetime_picker/base";
 @import "active_admin/select2/base";
 
+$skinLogo: url("logo.png") no-repeat 10px 2px;
+$skinActiveColor: #007000;
+$skinHeaderBck: #013e6a;
+$panelHeaderBck: #013e6a;
+$skinTextColor: #000000; //#1e2a33;
+$skinTextActiveColor: #ffffff;
+$skinTextTable: #000000; //#7f8c8d;
+
+@import "active_skin";
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
 //

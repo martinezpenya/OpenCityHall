@@ -34,6 +34,8 @@ gem 'just-datetime-picker'
 
 gem 'activeadmin-select2', github: 'mfairburn/activeadmin-select2'
 
+gem 'active_skin'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
