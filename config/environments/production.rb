@@ -59,6 +59,9 @@ OpenCityHall::Application.configure do
   # the I18n.default_locale when a translation can not be found)
   config.i18n.fallbacks = true
 
+  #David: after upgrade to rails 4
+  config.eager_load = true
+
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
