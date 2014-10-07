@@ -12,12 +12,12 @@ end
 before_filter :set_locale_from_browser
  def set_locale_from_browser
    #if (session[:initialized].nil? || !session[:initialized])
-     logger.debug "***** Accept-Language: #{request.env['HTTP_ACCEPT_LANGUAGE']}"
+     #logger.debug "***** Accept-Language: #{request.env['HTTP_ACCEPT_LANGUAGE']}"
      I18n.locale = extract_locale_from_accept_language_header
      I18n.default_locale = extract_locale_from_accept_language_header
      I18n.reload!
-     logger.debug "***** Locale set to '#{I18n.locale}'"
-     logger.debug "***** Default_locale set to '#{I18n.locale}'"
+     #logger.debug "***** Locale set to '#{I18n.locale}'"
+     #logger.debug "***** Default_locale set to '#{I18n.locale}'"
    #else
    #  logger.debug "***** Locale already set to '#{I18n.locale}'"
    #  logger.info "***** Locale already set to '#{I18n.locale}'"
