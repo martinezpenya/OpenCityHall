@@ -13,7 +13,7 @@
 @import "active_admin/just_datetime_picker/base";
 @import "active_admin/select2/base";
 
-$skinLogo: url(asset-path("logo.png")) no-repeat 10px 2px;
+$skinLogo: url("logo.png") no-repeat 10px 2px;
 $skinActiveColor: #007000;
 $skinHeaderBck: #013e6a;
 $panelHeaderBck: #013e6a;

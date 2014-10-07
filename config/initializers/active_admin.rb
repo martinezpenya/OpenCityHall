@@ -215,7 +215,7 @@ ActiveAdmin.setup do |config|
   
   # == Setting a Favicon
   #
-  config.favicon = asset_path('favicon.ico')
+  config.favicon = "favicon.ico"
   
   # Menu Master_Tables
   config.namespace :admin do |admin|
