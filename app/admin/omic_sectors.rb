@@ -1,6 +1,13 @@
 ActiveAdmin.register OmicSector do
   menu :parent => 'Master_tables'
 
+  controller do
+    def permitted_params
+      params.permit :utf8, :_method, :authenticity_token, :commit, :id,
+        omic_sector: [:description, :response_time]
+    end
+  end
+  
   config.comments = false
   
   index do

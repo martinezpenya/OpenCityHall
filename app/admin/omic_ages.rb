@@ -1,6 +1,13 @@
 ActiveAdmin.register OmicAge do
   menu :parent => 'Master_tables'
-
+  
+  controller do
+    def permitted_params
+      params.permit :utf8, :_method, :authenticity_token, :commit, :id,
+        omic_age: [:description]
+    end
+  end
+  
   config.comments = false
   
   index do

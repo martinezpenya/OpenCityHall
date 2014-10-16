@@ -1,6 +1,13 @@
 ActiveAdmin.register OmicSituation  do
   menu :parent => 'Master_tables'
 
+  controller do
+    def permitted_params
+      params.permit :utf8, :_method, :authenticity_token, :commit, :id,
+        omic_situation: [:description, :name]
+    end
+  end
+  
   config.comments = false
   config.sort_order ="id_asc"
   index do

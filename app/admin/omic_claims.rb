@@ -89,6 +89,13 @@ include ActionView::Helpers::NumberHelper
 
 ActiveAdmin.register OmicClaim do
   config.comments = false
+  
+  controller do
+    def permitted_params
+      params.permit :utf8, :_method, :authenticity_token, :commit, :id,
+        omic_claim: [:datetime, :documents, :facts, :notes, :pretensions, :year, :open, :admin_user_id, :omic_sector_id, :omic_mean_id, :omic_reason_id, :omic_situation_id, :omic_petitioner_id, :omic_claim, :omic_reclaimed_id, :omic_result_id]
+    end
+  end
 
   before_save do |claim|
     if !claim.admin_user.present? 

@@ -3,7 +3,6 @@ class OmicQuery < ActiveRecord::Base
   belongs_to :omic_sector
   belongs_to :omic_service
   belongs_to :omic_reason
-  belongs_to :omic_reason
   belongs_to :omic_mean
   belongs_to :admin_user
   

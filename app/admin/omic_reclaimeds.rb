@@ -1,5 +1,12 @@
 ActiveAdmin.register OmicReclaimed do
 
+  controller do
+    def permitted_params
+      params.permit :utf8, :_method, :authenticity_token, :commit, :id,
+        omic_reclaimed: [:address, :common_id_type_id, :cp, :id_doc, :email, :fax, :notes, :phone1, :phone2, :province, :social_name, :comercial_name, :town]
+    end
+  end
+
   config.comments = false
   
   index do

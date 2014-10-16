@@ -1,6 +1,13 @@
 ActiveAdmin.register OmicPetitioner do
   config.comments = false
 
+  controller do
+    def permitted_params
+      params.permit :utf8, :_method, :authenticity_token, :commit, :id,
+        omic_petitiones: [:common_id_type_id, :id_doc, :firstname, :surname1, :surname2, :address, :cp, :town, :province, :phone1, :phone2, :email, :notes, :sex, :omic_age_id]
+    end
+  end
+  
   index do
     selectable_column
     column I18n.t("activerecord.attributes.omic_petitioner.id_doc"), :sortable => :id_doc do |item|

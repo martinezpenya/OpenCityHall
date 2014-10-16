@@ -1,5 +1,12 @@
 ActiveAdmin.register OmicQuery do 
   config.comments = false
+   
+  controller do
+    def permitted_params
+      params.permit :utf8, :_method, :authenticity_token, :commit, :id,
+        omic_query: [:datetime, :notes, :open, :omic_sector_id, :omic_service_id, :omic_reason_id, :omic_mean_id, :admin_user_id]
+    end
+  end
   
   before_save do |query|
     if !query.admin_user.present? 

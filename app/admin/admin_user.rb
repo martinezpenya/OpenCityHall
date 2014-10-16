@@ -1,6 +1,13 @@
 ActiveAdmin.register AdminUser do
   config.comments = false
-  
+
+  controller do
+    def permitted_params
+      params.permit :utf8, :_method, :authenticity_token, :commit, :id,
+        admin_user: [:email, :password, :password_confirmation, :remember_me, :name, :admin, :initials]
+    end
+  end
+    
   index do          
     column I18n.t("activerecord.attributes.admin_user.name"), :name
     column I18n.t("activerecord.attributes.admin_user.initials"), :initials
