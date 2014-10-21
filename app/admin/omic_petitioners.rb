@@ -3,8 +3,26 @@ ActiveAdmin.register OmicPetitioner do
 
   controller do
     def permitted_params
-      params.permit :utf8, :_method, :authenticity_token, :commit, :id,
-        omic_petitiones: [:common_id_type_id, :id_doc, :firstname, :surname1, :surname2, :address, :cp, :town, :province, :phone1, :phone2, :email, :notes, :sex, :omic_age_id]
+      params.permit :utf8, 
+                    :_method, 
+                    :authenticity_token, 
+                    :commit, 
+                    :id,
+                    omic_petitioner: [:common_id_type_id, 
+                                      :id_doc, 
+                                      :firstname, 
+                                      :surname1, 
+                                      :surname2, 
+                                      :address, 
+                                      :cp, 
+                                      :town, 
+                                      :province, 
+                                      :phone1, 
+                                      :phone2, 
+                                      :email, 
+                                      :notes, 
+                                      :sex, 
+                                      :omic_age_id]
     end
   end
   

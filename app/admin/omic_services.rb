@@ -4,7 +4,7 @@ ActiveAdmin.register OmicService do
   controller do
     def permitted_params
       params.permit :utf8, :_method, :authenticity_token, :commit, :id,
-        omic_sector: [:description, :name]
+        omic_service: [:description, :name]
     end
   end
   

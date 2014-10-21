@@ -4,7 +4,7 @@ ActiveAdmin.register OmicResult do
   controller do
     def permitted_params
       params.permit :utf8, :_method, :authenticity_token, :commit, :id,
-        omic_reclaimed: [:name, :description]
+        omic_result: [:name, :description]
     end
   end
   
