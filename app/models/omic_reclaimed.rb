@@ -5,6 +5,8 @@ class OmicReclaimed < ActiveRecord::Base
 
   accepts_nested_attributes_for :common_id_type
 
+  validates_presence_of :common_id_type, :id_doc, :social_name, :comercial_name;
+  
   def display_name
     social_name.to_s + " (" + common_id_type.to_s + " " + id_doc.to_s + ")"
   end

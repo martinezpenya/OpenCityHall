@@ -4,6 +4,8 @@ class OmicPetitioner < ActiveRecord::Base
   belongs_to :common_id_type
   belongs_to :omic_age
     
+  validates_presence_of :firstname, :surname1, :surname2, :common_id_type, :id_doc, :sex, :omic_age;
+      
   def display_name
     self.firstname.to_s + " "+ surname1.to_s + " " + surname2.to_s + " (" + common_id_type.to_s + " " + id_doc.to_s + ")"
   end

@@ -1,8 +1,5 @@
 class OmicClaim < ActiveRecord::Base
-##  attr_accessible :datetime, :documents, :facts, :notes, :pretensions, :year, :open, :admin_user_id, :omic_sector_id, :omic_mean_id, :omic_reason_id, :omic_situation_id, :omic_petitioner_id, :omic_petitioner_attributes, :omic_reclaimed_id, :omic_result_id
-
-  #:datetime
-  #validates :datetime, :presence => true
+  validates :datetime, :omic_petitioner, :omic_reclaimed, :omic_sector, :omic_mean, :omic_reason, :documents, :facts, :pretensions, :omic_situation, :omic_result, :open, :presence => true
 
   belongs_to :omic_petitioner
   belongs_to :omic_reclaimed
@@ -15,11 +12,6 @@ class OmicClaim < ActiveRecord::Base
   
   accepts_nested_attributes_for :omic_petitioner, :reject_if => :all_blank
   accepts_nested_attributes_for :omic_reclaimed, :reject_if => :all_blank
-  #accepts_nested_attributes_for :admin_user
-  #accepts_nested_attributes_for :omic_sector
-  #accepts_nested_attributes_for :omic_reason  
-  
-  #validates :year, :datetime, :admin_user, :presence => true
   
   def close!
     self.open=false
