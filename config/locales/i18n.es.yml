@@ -251,7 +251,7 @@ es:
   time: 
     am: am
     formats: 
-      default: "%H:%M:%S"
-      long: "%H:%M:%S"
-      short: "%H:%M:%S"
+      default: "%d/%m/%Y"
+      long: "%d de %B de %Y"
+      short: "%d/%m/%Y"
     pm: pm
