@@ -156,6 +156,10 @@ ca:
       month: mes
       second: segon
       year: any
+    formats: 
+      default: "%m/%d/%Y"
+      long: "%B %d, %Y"
+      short: "%m/%d/%Y"
   errors: 
     format: "%{attribute} %{message}"
     messages: 

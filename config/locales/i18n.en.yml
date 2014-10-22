@@ -160,7 +160,11 @@ en:
         other: "%{count} months"
       x_seconds: 
         one: "1 second"
-        other: "%{count} seconds"
+        other: "%{count} seconds"       
+    formats: 
+      default: "%m/%d/%Y"
+      long: "%B %d, %Y"
+      short: "%m/%d/%Y"
     prompts: 
       day: Day
       hour: Hour
