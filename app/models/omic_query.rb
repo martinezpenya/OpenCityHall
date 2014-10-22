@@ -12,7 +12,7 @@ class OmicQuery < ActiveRecord::Base
   accepts_nested_attributes_for :omic_mean
   accepts_nested_attributes_for :admin_user
   
-  validates :datetime, :notes, :omic_sector, :omic_service, :omic_reason, :omic_mean, :admin_user, :open, :presence => true
+  validates_presence_of :datetime, :notes, :omic_sector, :omic_service, :omic_reason, :omic_mean, :admin_user, :open
   
   #def close!(query)
   #  query_to_close=OmicQuery.find(query)

@@ -93,7 +93,21 @@ ActiveAdmin.register OmicClaim do
   controller do
     def permitted_params
       params.permit :utf8, :_method, :authenticity_token, :commit, :id,
-        omic_claim: [:datetime, :documents, :facts, :notes, :pretensions, :year, :open, :admin_user_id, :omic_sector_id, :omic_mean_id, :omic_reason_id, :omic_situation_id, :omic_petitioner_id, :omic_claim, :omic_reclaimed_id, :omic_result_id]
+        omic_claim: [:datetime, 
+                     :omic_petitioner_id,
+                     :omic_reclaimed_id,
+                     :omic_sector_id, 
+                     :omic_mean_id, 
+                     :omic_reason_id, 
+                     :facts, 
+                     :pretensions, 
+                     :documents,
+                     :notes, 
+                     :omic_situation_id,
+                     :omic_result_id,
+                     :open, 
+                     :year, 
+                     :admin_user_id]
     end
   end
 

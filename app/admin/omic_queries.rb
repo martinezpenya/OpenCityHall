@@ -86,7 +86,7 @@ ActiveAdmin.register OmicQuery do
   show do
     panel I18n.t("active_admin.details",:model => I18n.t("activerecord.models.omic_query.one")) do
       attributes_table_for omic_query do
-        row(I18n.t("activerecord.attributes.omic_query.datetime")) { omic_query.datetime}
+        row(I18n.t("activerecord.attributes.omic_query.datetime")) {omic_query.datetime}
         row(I18n.t("activerecord.attributes.omic_query.notes")) { omic_query.notes }
         row(I18n.t("activerecord.models.omic_sector.one")) { !omic_query.omic_sector.nil? ? ( link_to omic_query.omic_sector.description, admin_omic_sector_path(omic_query.omic_sector) ) : ("") }
         row(I18n.t("activerecord.models.omic_service.one")) { !omic_query.omic_service.nil? ? ( link_to omic_query.omic_service.description, admin_omic_service_path(omic_query.omic_service) ) : ("") }
