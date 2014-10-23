@@ -12,6 +12,7 @@ ca:
     new_model: "Crear %{model}"
     create_model: "Crear %{model}"
     edit_model: "Editar %{model}"
+    update_model: "Actualitzar %{model}"    
     delete_model: "Eliminar %{model}"
     details: "Detalls de %{model}"
     cancel: "Cancel·lar"

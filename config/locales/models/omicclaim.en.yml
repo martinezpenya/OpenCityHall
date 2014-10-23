@@ -14,10 +14,10 @@ en:
           one: Petitioner
           other: Petitioners
         omic_reason: Reason
-        omic_situation: Situation
         omic_reclaimed: Reclaimed
         omic_result: Result
         omic_sector: Sector
+        omic_situation: Situation
         open: Open?
         pretensions: Pretension
         updated_at: "Modified at"

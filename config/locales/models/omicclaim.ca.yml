@@ -14,10 +14,10 @@ ca:
           one: Reclamant
           other: Reclamants
         omic_reason: Motiu
-        omic_situation: Situació
         omic_reclaimed: Reclamat
         omic_result: Resultat
         omic_sector: Sector
+        omic_situation: Situació
         open: Oberta?
         pretensions: Pretensió
         updated_at: "Modificat el"

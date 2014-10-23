@@ -14,10 +14,10 @@ es:
           one: Reclamante
           other: Reclamantes
         omic_reason: Motivo
-        omic_situation: Situación        
         omic_reclaimed: Reclamado
         omic_result: Resultado
         omic_sector: Sector
+        omic_situation: Situación
         open: Abierta?
         pretensions: Pretensión
         updated_at: "Modificado el"
