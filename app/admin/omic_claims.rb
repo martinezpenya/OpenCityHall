@@ -213,6 +213,10 @@ ActiveAdmin.register OmicClaim do
   filter :omic_resultat
   filter :open
   filter :notes
+  filter :omic_sector
+  filter :omic_service
+  filter :omic_reason
+  filter :omic_mean
   
   show do
     panel I18n.t("active_admin.details",:model => I18n.t("activerecord.models.omic_claim.one")) do
