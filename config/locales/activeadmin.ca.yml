@@ -73,14 +73,14 @@ ca:
         remember_me: "Recordar"
         submit: "iniciar sessió"
       reset_password:
-        title: "Heu perdut la contrasenya?"
+        title: "Heu oblidat la contrasenya?"
         submit: "Restablir la contrasenya"
       change_password:
         title: "Canvieu la contrasenya"
         submit: "Canviar la contrasenya"
       links:
         sign_in: "Registrar"
-        forgot_your_password: "Heu perdut la contrasenya?"
+        forgot_your_password: "Heu oblidat la contrasenya?"
         sign_in_with_omniauth_provider: "Connecta't amb %{provider}"
       email:
         title: "Usuari"
