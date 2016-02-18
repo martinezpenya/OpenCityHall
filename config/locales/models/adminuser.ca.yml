@@ -9,7 +9,8 @@ ca:
         current_sign_in_at: "Login actual"
         last_sign_in_at: "Últim login"          
         sign_in_count: "n. de logins"
-        admin: "Administrador?"                
+        admin: "Administrador?"
+        roles: "Rols"                
         updated_at: "Modificat el"
     models: 
       admin_user: 
