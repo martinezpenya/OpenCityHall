@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141002061913) do
+ActiveRecord::Schema.define(version: 20160211132240) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20141002061913) do
     t.boolean  "admin"
     t.string   "name"
     t.string   "initials"
+    t.string   "roles"
   end
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
