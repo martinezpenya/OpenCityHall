@@ -14,7 +14,7 @@ ActiveAdmin.register AdminUser do
       current_id = current_admin_user.id
       if current_admin_user.admin? then
         def permitted_params
-          params.permit admin_user: [:name, :email, :password, :password_confirmation, :roles, :admin]
+          params.permit admin_user: [:name, :email, :password, :initials, :password_confirmation, :roles, :admin]
         end
       else
         def permitted_params
