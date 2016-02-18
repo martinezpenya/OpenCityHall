@@ -12,17 +12,23 @@
 @import "active_admin/base";
 @import "active_admin/just_datetime_picker/base";
 @import "active_admin/select2/base";
+//@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&subset=latin,latin-ext";
+@import "http://fonts.googleapis.com/css?family=Tangerine";
 
 $skinLogo: url("logo.png") no-repeat 10px 2px;
-$skinActiveColor: #007000;
-$skinHeaderBck: #013e6a;
-$panelHeaderBck: #013e6a;
-$skinTextColor: #000000; //#1e2a33;
-$skinTextActiveColor: #ffffff;
-$skinTextTable: #000000; //#7f8c8d;
+$skinActiveColor: #bd5b0c !default; //taronja
+$skinHeaderBck: #34855b !default; //verd
+$panelHeaderBck: #34855b !default; //verd
+$skinTextColor: #000000 !default; //#1e2a33;
+$skinTextActiveColor: #ffffff !default;
+$skinTextTable: #000000 !default; //#7f8c8d;
+$skinHeaderTextColor: #FFFFFF !default;
+//$skinFontFamily: 'Source Sans Pro', sans-serif !default;
+$skinFontFamily: 'Tangerine' !default;
+$panelHeaderTextColor: #FFFFFF !default;
 
 @import "active_skin";
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
 //
-//   .status_tag { background: #6090DB; }
+   .status_tag { background: #6090DB; }
