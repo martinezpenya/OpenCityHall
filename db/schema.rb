@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 20160211132240) do
     t.string   "namespace"
   end
 
-  add_index "active_admin_comments", ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
-  add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace"
-  add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_admin_notes_on_resource_type_and_resource_id"
+  add_index "active_admin_comments", ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id", using: :btree
+  add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
+  add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_admin_notes_on_resource_type_and_resource_id", using: :btree
 
   create_table "admin_users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(version: 20160211132240) do
     t.string   "roles"
   end
 
-  add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
-  add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
+  add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "common_id_types", force: true do |t|
     t.string   "name"
@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 20160211132240) do
 
   create_table "omic_claims", force: true do |t|
     t.integer  "year"
-    t.date     "datetime"
+    t.datetime "datetime"
     t.text     "facts"
     t.text     "documents"
     t.text     "pretensions"
@@ -81,6 +81,14 @@ ActiveRecord::Schema.define(version: 20160211132240) do
     t.boolean  "open"
     t.integer  "omic_situation_id"
   end
+
+  add_index "omic_claims", ["admin_user_id"], name: "index_omic_claims_on_admin_user_id", using: :btree
+  add_index "omic_claims", ["omic_mean_id"], name: "index_omic_claims_on_omic_mean_id", using: :btree
+  add_index "omic_claims", ["omic_petitioner_id"], name: "index_omic_claims_on_omic_petitioner_id", using: :btree
+  add_index "omic_claims", ["omic_reason_id"], name: "index_omic_claims_on_omic_reason_id", using: :btree
+  add_index "omic_claims", ["omic_reclaimed_id"], name: "index_omic_claims_on_omic_reclaimed_id", using: :btree
+  add_index "omic_claims", ["omic_result_id"], name: "index_omic_claims_on_omic_result_id", using: :btree
+  add_index "omic_claims", ["omic_sector_id"], name: "index_omic_claims_on_omic_sector_id", using: :btree
 
   create_table "omic_means", force: true do |t|
     t.string   "description"
@@ -108,8 +116,11 @@ ActiveRecord::Schema.define(version: 20160211132240) do
     t.datetime "updated_at",        null: false
   end
 
+  add_index "omic_petitioners", ["common_id_type_id"], name: "index_omic_petitioners_on_common_id_type_id", using: :btree
+  add_index "omic_petitioners", ["omic_age_id"], name: "index_omic_petitioners_on_omic_age_id", using: :btree
+
   create_table "omic_queries", force: true do |t|
-    t.date     "datetime"
+    t.datetime "datetime"
     t.text     "notes"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
@@ -145,6 +156,8 @@ ActiveRecord::Schema.define(version: 20160211132240) do
     t.datetime "updated_at",        null: false
     t.string   "comercial_name"
   end
+
+  add_index "omic_reclaimeds", ["common_id_type_id"], name: "index_omic_reclaimeds_on_common_id_type_id", using: :btree
 
   create_table "omic_results", force: true do |t|
     t.string   "name"
