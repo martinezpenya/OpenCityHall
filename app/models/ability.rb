@@ -7,9 +7,11 @@ class Ability
       can [:update, :read], AdminUser, :id => user.id
       if user.roles.include? "O" then
         #rol d'omic
-        can :manage, OmicQuery, :admin_user_id => user.id
-        can :manage, OmicClaim, :admin_user_id => user.id
-        can :read, AdminUser, :id => user.id
+        can [:update, :read], OmicQuery, :admin_user_id => user.id
+        can [:create], OmicQuery
+        can [:update, :read], OmicClaim, :admin_user_id => user.id
+        can [:create], OmicClaim
+        #can :read, AdminUser, :id => user.id
         can :read, OmicSector
         can :read, OmicService
         can :read, OmicReason
