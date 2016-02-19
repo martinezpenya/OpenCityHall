@@ -3,7 +3,7 @@ ActiveAdmin.register_page "Dashboard" do
   menu :priority => 1, :label => proc{ I18n.t("active_admin.dashboard") }
 
   content :title => proc{ I18n.t("active_admin.dashboard") } do
-    if authorized?(:manage, OmicClaim) then
+    if authorized?(:read, OmicClaim) then
       columns do
         column do
           panel I18n.t("activerecord.models.omic_claim.other")  + " " + I18n.t("dashboard.register")  do
