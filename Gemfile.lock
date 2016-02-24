@@ -111,9 +111,6 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.0)
       railties (>= 3.2.16)
-    just-datetime-picker (0.0.6)
-      activeadmin (>= 0.4.4)
-      formtastic (>= 2.0.0)
     kaminari (0.16.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -194,11 +191,14 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
+    timeliness (0.3.8)
     ttfunk (1.2.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
+    validates_timeliness (4.0.2)
+      timeliness (~> 0.3.7)
     warden (1.2.3)
       rack (>= 1.0)
 
@@ -217,7 +217,6 @@ DEPENDENCIES
   coffee-rails
   devise
   jquery-rails
-  just-datetime-picker
   mysql2
   odf-report
   prawn
@@ -228,3 +227,4 @@ DEPENDENCIES
   select2-rails
   sqlite3
   uglifier
+  validates_timeliness

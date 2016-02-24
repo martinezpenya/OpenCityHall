@@ -11,4 +11,5 @@ class AdminUser < ActiveRecord::Base
 ##  # attr_accessible :title, :body
   has_many :omic_queries
   has_many :omic_claims
+  has_many :access_visits
 end

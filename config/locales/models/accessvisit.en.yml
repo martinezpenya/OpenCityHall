@@ -1,0 +1,32 @@
+--- 
+en: 
+  activerecord: 
+    errors:
+      models:
+        access_visit:
+          attributes:
+            exit_datetime:
+              on_or_after: "The exit time must be after enter time"
+    attributes: 
+      access_visit: 
+        id: "Id"
+        datetime: Date
+        common_id_type: "Type of document"
+        id_doc: "Document"
+        name: "Complete name"
+        motivation: "Motivation"
+        enter_datetime: "Enter time"
+        exit_datetime: "Exit time"
+        admin_user: User
+        created_at: "Created at"
+        updated_at: "Modified at"
+        year: Year
+    models: 
+      access_visit: 
+        actions: 
+          exit: "exit"
+        messages: 
+          exited: "The visit %{access_visit_id} has been marked as exited."
+          exit_datetime_greater: "has to be after enter time"
+        one: Visit
+        other: Visits

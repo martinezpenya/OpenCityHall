@@ -3,3 +3,5 @@ en:
   dashboard: 
     register: "in Register"
     signature: "in Signature" 
+    stillin: "that still are in the City Hall"
+    todayout: "that has leaved the City Hall (today)"

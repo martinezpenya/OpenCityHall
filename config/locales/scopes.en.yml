@@ -23,6 +23,8 @@ en:
       closed: "Closed"
       anyactual: "This year"
       anyanterior: "Past year"
+      diaactual: "Today"
+      diaanterior: "History"
       chozen:
         no_results_text: "No hi ha cap coincidència amb "
       select2:

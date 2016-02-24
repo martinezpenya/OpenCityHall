@@ -248,10 +248,15 @@ ca:
       last_word_connector: ", i "
       two_words_connector: " i "
       words_connector: ", "
+  date:
+    formats: 
+      default: "%d/%m/%Y"
+      long: "%H:%M:%S"
+      short: "%d/%m/%Y"
   time: 
     am: am
     formats: 
       default: "%d/%m/%Y"
-      long: "%d de %B de %Y"
-      short: "%d/%m/%Y"
+      long: "%H:%M:%S"
+      short: "%H:%M"
     pm: pm

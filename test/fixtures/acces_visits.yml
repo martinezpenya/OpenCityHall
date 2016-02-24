@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 1
+  datetime: 2016-02-22 10:42:52
+  id_doc: MyString
+  name: MyString
+  motivation: MyString
+  enter_datetime: 2016-02-22 10:42:52
+  exit_datetime: 2016-02-22 10:42:52
+
+two:
+  year: 1
+  datetime: 2016-02-22 10:42:52
+  id_doc: MyString
+  name: MyString
+  motivation: MyString
+  enter_datetime: 2016-02-22 10:42:52
+  exit_datetime: 2016-02-22 10:42:52

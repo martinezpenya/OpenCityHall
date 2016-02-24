@@ -3,3 +3,5 @@ ca:
   dashboard: 
     register: "en Registre"
     signature: "en Signatura" 
+    stillin: "que encara es troben a l'Ajuntament"
+    todayout: "que ja han deixat l'Ajuntament (hui)"

@@ -23,6 +23,8 @@ es:
       closed: "Cerrado/das"
       anyactual: "Año actual"
       anyanterior: "El año anterior"
+      diaactual: "Hoy"
+      diaanterior: "Histórico"      
       chozen:
         no_results_text: "No hay ninguna coincidencia con "
       select2:

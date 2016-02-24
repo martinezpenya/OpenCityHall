@@ -1,0 +1,32 @@
+--- 
+es: 
+  activerecord: 
+    errors:
+      models:
+        access_visit:
+          attributes:
+            exit_datetime:
+              on_or_after: "La hora de salida ha de ser posterior a la de entrada"
+    attributes: 
+      access_visit: 
+        id: "Id"
+        datetime: Fecha
+        common_id_type: "Tipo de documento"
+        id_doc: "Documento"
+        name: "Nombre completo"
+        motivation: "Motivo"
+        enter_datetime: "H. entrada"
+        exit_datetime: "H. salida"
+        admin_user: Usuario
+        created_at: "Creado el"
+        updated_at: "Modificado el"
+        year: Año
+    models: 
+      access_visit: 
+        actions: 
+          exit: "salir"
+        messages: 
+          exited: "La visita %{access_visit_id} se ha marcado de salida correctamente."
+          exit_datetime_greater: "ha de ser posterior a la hora de entrada"
+        one: Visita
+        other: Visitas

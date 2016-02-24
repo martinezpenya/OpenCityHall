@@ -1,17 +1,19 @@
 class Ability
   include CanCan::Ability
   def initialize(user)
+    #Everyone can see Dashboard
+    can :read, ActiveAdmin::Page, :name => "Dashboard"
     if user.admin? then
       can :manage, :all
+      #can :read, :all
     else
       can [:update, :read], AdminUser, :id => user.id
-      if user.roles.include? "O" then
+      if user.roles.upcase.include? "O" then
         #rol d'omic
-        can [:update, :read], OmicQuery, :admin_user_id => user.id
+        can [:update, :read, :close], OmicQuery, :admin_user_id => user.id
         can [:create], OmicQuery
-        can [:update, :read], OmicClaim, :admin_user_id => user.id
+        can [:update, :read, :close], OmicClaim, :admin_user_id => user.id
         can [:create], OmicClaim
-        #can :read, AdminUser, :id => user.id
         can :read, OmicSector
         can :read, OmicService
         can :read, OmicReason
@@ -22,12 +24,13 @@ class Ability
         can :manage, OmicPetitioner
         can :manage, OmicSituation
         can :manage, OmicReclaimed
-      elsif user.roles.include? "A" then
-      #rol de control d'accessos
+      end 
+      if user.roles.upcase.include? "A" then
+        #rol de control d'accessos
+        can [:update, :read, :exit], AccessVisit, :admin_user_id => user.id , :exit_datetime => nil
+        can [:read], AccessVisit, :admin_user_id => user.id
+        can :create, AccessVisit
       end
-
-      #Everyone can see Dashboard
-      can :read, ActiveAdmin::Page, :name => "Dashboard"
     end
   # Define abilities for the passed in user here. For example:
   #

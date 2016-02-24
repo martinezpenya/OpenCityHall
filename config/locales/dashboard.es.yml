@@ -3,3 +3,5 @@ es:
   dashboard: 
     register: "en Registro"
     signature: "en Firma" 
+    stillin: "que todavia se encuentran en el Ayuntamiento"
+    todayout: "que ya han dejado el Ayuntamiento (hoy)"

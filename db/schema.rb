@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160211132240) do
+ActiveRecord::Schema.define(version: 20160222094252) do
+
+  create_table "access_visits", force: true do |t|
+    t.integer  "year"
+    t.date     "datetime"
+    t.integer  "admin_user_id"
+    t.integer  "common_id_type_id"
+    t.string   "id_doc"
+    t.string   "name"
+    t.string   "motivation"
+    t.time     "enter_datetime"
+    t.time     "exit_datetime"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false

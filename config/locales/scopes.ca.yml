@@ -23,6 +23,8 @@ ca:
       closed: "Tancat/des"
       anyactual: "Enguany"
       anyanterior: "L'any anterior"
+      diaactual: "Hui"
+      diaanterior: "Històric"
       chozen:
         no_results_text: "No hi ha cap coincidència amb "
       select2:
