@@ -22,7 +22,9 @@ gem 'rails_config'
 gem 'cancan'
 gem 'jquery-rails'
 gem 'select2-rails'
-gem 'just-datetime-picker'
+#gem 'just-datetime-picker'
+#gem 'just-time-picker'
+gem 'validates_timeliness'
 
 gem 'activeadmin-select2', github: 'mfairburn/activeadmin-select2'
 
