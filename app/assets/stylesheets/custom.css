@@ -8,3 +8,13 @@ body.active_admin #footer
 {
 	text-align: right;
 }
+
+#titlebar_left .breadcrumb a 
+{ 
+	color: #ffffff; 
+}
+
+#main_content .attributes_table table td
+{
+	color: #000000;
+}
