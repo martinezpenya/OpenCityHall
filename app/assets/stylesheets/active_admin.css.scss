@@ -12,8 +12,8 @@
 @import "active_admin/base";
 @import "active_admin/just_datetime_picker/base";
 @import "active_admin/select2/base";
-//@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&subset=latin,latin-ext";
-@import "http://fonts.googleapis.com/css?family=Tangerine";
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&subset=latin,latin-ext";
+//@import "http://fonts.googleapis.com/css?family=Tangerine";
 
 $skinLogo: url("logo.png") no-repeat 10px 2px;
 $skinActiveColor: #bd5b0c !default; //taronja
@@ -32,3 +32,4 @@ $panelHeaderTextColor: #FFFFFF !default;
 // For example, to change the default status-tag color:
 //
    .status_tag { background: #6090DB; }
+
