@@ -60,8 +60,10 @@ ActiveAdmin.register AdminUser do
     column I18n.t("activerecord.attributes.admin_user.last_sign_in_at"), :last_sign_in_at
     column I18n.t("activerecord.attributes.admin_user.sign_in_count"), :sign_in_count
     #if authorized?(:manage, AdminUser)
-    column I18n.t("activerecord.attributes.admin_user.admin"), :admin
-    column I18n.t("activerecord.attributes.admin_user.roles"), :roles
+    if current_admin_user.admin? then
+      column I18n.t("activerecord.attributes.admin_user.admin"), :admin
+      column I18n.t("activerecord.attributes.admin_user.roles"), :roles
+    end 
     actions
   #end
   end
