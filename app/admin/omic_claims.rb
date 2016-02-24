@@ -258,7 +258,7 @@ ActiveAdmin.register OmicClaim do
   
   form  do |f|
     f.inputs do
-      f.input :datetime, :as => :datepicker, :input_html => {:style => 'width: 100px'}
+      f.input :datetime, :as => :datepicker, datepicker_options: {dateFormat: "dd/mm/yy" }, :input_html => {:style => 'width: 70px', :value => Date.today.strftime("%d/%m/%Y")}
       
       f.input :omic_petitioner, as: :select2, :input_html => {:style => 'width: 450px'}
       
