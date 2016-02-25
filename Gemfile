@@ -26,7 +26,7 @@ gem 'select2-rails'
 #gem 'just-time-picker'
 
 ####
-#gem 'validates_timeliness'
+gem 'validates_timeliness'
 
 gem 'activeadmin-select2', github: 'mfairburn/activeadmin-select2'
 

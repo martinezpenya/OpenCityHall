@@ -7,10 +7,10 @@ class AccessVisit < ActiveRecord::Base
   validates_presence_of :year, :datetime, :common_id_type, :id_doc, :name, :motivation, :enter_datetime
 
   #### requires gem 'validates_timeliness'
-  #validates_time :exit_datetime, {:after => :enter_datetime, 
-  #                                :allow_blank => true,
-  #                                :after_message => I18n.t("activerecord.models.access_visit.messages.exit_datetime_greater")
-  #                                }
+  validates_time :exit_datetime, {:after => :enter_datetime, 
+                                  :allow_blank => true,
+                                  :after_message => I18n.t("activerecord.models.access_visit.messages.exit_datetime_greater")
+                                  }
   
   def exit!
     self.exit_datetime = Time.current
