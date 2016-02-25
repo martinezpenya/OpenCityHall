@@ -23,10 +23,10 @@ ca:
         year: Any
     models: 
       access_visit: 
+        one: "Visita"
+        other: "Visites"
         actions: 
           exit: "eixir"
         messages: 
           exited: "La visita %{access_visit_id} s'ha marcat d'eixida correctament."
           exit_datetime_greater: "ha de ser posterior a l'hora d'entrada"
-        one: Visita
-        other: Visites

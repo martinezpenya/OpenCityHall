@@ -23,10 +23,10 @@ en:
         year: Year
     models: 
       access_visit: 
+        one: Visit
+        other: Visits
         actions: 
           exit: "exit"
         messages: 
           exited: "The visit %{access_visit_id} has been marked as exited."
           exit_datetime_greater: "has to be after enter time"
-        one: Visit
-        other: Visits

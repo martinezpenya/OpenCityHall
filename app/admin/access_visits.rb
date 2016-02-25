@@ -1,6 +1,6 @@
 ActiveAdmin.register AccessVisit do
   config.comments = false
-  menu :label => I18n.t("activerecord.models.access_visit.other"), :priority => 1
+  menu :label => proc {I18n.t("activerecord.models.access_visit.other")}, :priority => 1
   
   controller do
     def permitted_params
