@@ -28,7 +28,7 @@ set :deploy_to, '/home/deploy/OpenCityHall'
 set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
-set :ssh_options, { :forward_agent => true }
+#set :ssh_options, { :forward_agent => true }
 
 # Default value for linked_dirs is []
 # set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
@@ -38,6 +38,8 @@ set :ssh_options, { :forward_agent => true }
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+
+set :bundle_without, [:development, :test]
 
 namespace :deploy do
 
