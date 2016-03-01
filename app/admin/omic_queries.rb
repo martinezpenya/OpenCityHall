@@ -99,7 +99,8 @@ ActiveAdmin.register OmicQuery do
   
   form  do |f|
     f.inputs do
-      f.input :datetime, :as => :datepicker, datepicker_options: {dateFormat: "dd/mm/yy" }, :input_html => {:style => 'width: 70px', :value => Date.today.strftime("%d/%m/%Y")}
+      f.input :datetime, :as => :datepicker, datepicker_options: {dateFormat: "dd/mm/yy" }, :input_html => {:style => 'width: 70px'}
+    #  f.input :datetime, :as => :datepicker, datepicker_options: {dateFormat: "dd/mm/yy" }, :input_html => {:style => 'width: 70px', :value => Date.today.strftime("%d/%m/%Y")}
       f.input :omic_sector, :as => :select2, :input_html => {:style => 'width: 250px'}
       f.input :omic_service, :as => :select2, :input_html => {:style => 'width: 250px'}
       f.input :notes
