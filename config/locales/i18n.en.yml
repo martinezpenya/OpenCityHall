@@ -269,7 +269,7 @@ en:
   date:
     formats: 
       default: "%d/%m/%Y"
-      long: "%H:%M:%S"
+      long: "%d/%m/%Y"
       short: "%d/%m/%Y"
   time: 
     am: am

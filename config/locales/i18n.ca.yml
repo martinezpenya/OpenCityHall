@@ -1,6 +1,36 @@
 --- 
-ca: 
-  activemodel: 
+ca:
+  activemodel:
+    errors:
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: "ha de ser acceptat"
+        blank: "no pot estar en blanc"
+        confirmation: "no coincideix"
+        empty: "no pot estar buit"
+        equal_to: "ha de ser igual a %{count}"
+        even: "ha de ser parell"
+        exclusion: "està reservat"
+        greater_than: "ha de ser més gran que %{count}"
+        greater_than_or_equal_to: "ha de ser més gran o igual a %{count}"
+        inclusion: "no està inclós a la llista"
+        invalid: "no és vàlid"
+        less_than: "ha de ser menor que %{count}"
+        less_than_or_equal_to: "ha de ser menor o igual a %{count}"
+        not_a_number: "no és un número"
+        not_an_integer: "ha de ser un enter"
+        odd: "ha de ser senar"
+        record_invalid: "La validació ha fallat: %{errors}"
+        taken: "no està disponible"
+        too_long: "és massa llarg (%{count} caràcters màxim)"
+        too_short: "és massa curt (%{count} caràcters mínim)"
+        wrong_length: "no té la longitud correcta (%{count} caràcters exactament)"
+      template:
+        body: "Hi ha hagut problemes amb els següents camps:"
+        header:
+          one: "No s'ha pogut desar aquest/a %{model} perquè hi ha 1 error"
+          other: "No s'ha pogut desar aquest/a %{model} perquè hi ha hagut %{count} errors"
+  activerecord:
     errors: 
       format: "%{attribute} %{message}"
       messages: 
@@ -30,136 +60,6 @@ ca:
         header: 
           one: "No s'ha pogut desar aquest/a %{model} perquè hi ha 1 error"
           other: "No s'ha pogut desar aquest/a %{model} perquè hi ha hagut %{count} errors"
-  activerecord: 
-    errors: 
-      format: "%{attribute} %{message}"
-      messages: 
-        accepted: "ha de ser acceptat"
-        blank: "no pot estar en blanc"
-        confirmation: "no coincideix"
-        empty: "no pot estar buit"
-        equal_to: "ha de ser igual a %{count}"
-        even: "ha de ser parell"
-        exclusion: "està reservat"
-        greater_than: "ha de ser més gran que %{count}"
-        greater_than_or_equal_to: "ha de ser més gran o igual a %{count}"
-        inclusion: "no està inclós a la llista"
-        invalid: "no és vàlid"
-        less_than: "ha de ser menor que %{count}"
-        less_than_or_equal_to: "ha de ser menor o igual a %{count}"
-        not_a_number: "no és un número"
-        not_an_integer: "ha de ser un enter"
-        odd: "ha de ser senar"
-        record_invalid: "La validació ha fallat: %{errors}"
-        taken: "no està disponible"
-        too_long: "és massa llarg (%{count} caràcters màxim)"
-        too_short: "és massa curt (%{count} caràcters mínim)"
-        wrong_length: "no té la longitud correcta (%{count} caràcters exactament)"
-      template: 
-        body: "Hi ha hagut problemes amb els següents camps:"
-        header: 
-          one: "No s'ha pogut desar aquest/a %{model} perquè hi ha 1 error"
-          other: "No s'ha pogut desar aquest/a %{model} perquè hi ha hagut %{count} errors"
-  date: 
-    abbr_day_names: 
-      - Dg
-      - Dl
-      - Dm
-      - Dc
-      - Dj
-      - Dv
-      - Ds
-    abbr_month_names: 
-      - "~,\n"
-      - Gen
-      - Feb
-      - Mar
-      - Abr
-      - Mai
-      - Jun
-      - Jul
-      - Ago
-      - Set
-      - Oct
-      - Nov
-      - Des
-    day_names: 
-      - diumenge
-      - dilluns
-      - dimarts
-      - dimecres
-      - dijous
-      - divendres
-      - dissabte
-    formats: 
-      default: "%d/%m/%Y"
-      long: "%d de %B de %Y"
-      short: "%d/%m/%Y"
-    month_names: 
-      - ~
-      - Gener
-      - Febrer
-      - Març
-      - Abril
-      - Maig
-      - Juny
-      - Juliol
-      - Agost
-      - Setembre
-      - Octubre
-      - Novembre
-      - Desembre
-    order: 
-      - !ruby/symbol day
-      - !ruby/symbol month
-      - !ruby/symbol year
-  datetime: 
-    distance_in_words: 
-      about_x_hours: 
-        one: "aproximadament 1 hora"
-        other: "aproximadament %{count} hores"
-      about_x_months: 
-        one: "aproximadament 1 mes"
-        other: "aproximadament %{count} mesos"
-      about_x_years: 
-        one: "aproximadament 1 any"
-        other: "aproximadament %{count} anys"
-      almost_x_years: 
-        one: "quasi 1 any"
-        other: "quasi %{count} anys"
-      half_a_minute: "mig minut"
-      less_than_x_minutes: 
-        one: "menys d'1 minut"
-        other: "menys de %{count} minuts"
-      less_than_x_seconds: 
-        one: "menys d'1 segon"
-        other: "menys de %{count} segons"
-      over_x_years: 
-        one: "més d'1 any"
-        other: "més de %{count} anys"
-      x_days: 
-        one: "1 dia"
-        other: "%{count} dies"
-      x_minutes: 
-        one: "1 minut"
-        other: "%{count} minuts"
-      x_months: 
-        one: "1 mes"
-        other: "%{count} mesos"
-      x_seconds: 
-        one: "1 segon"
-        other: "%{count} segons"
-    prompts: 
-      day: dia
-      hour: hora
-      minute: minut
-      month: mes
-      second: segon
-      year: any
-    formats: 
-      default: "%m/%d/%Y"
-      long: "%B %d, %Y"
-      short: "%m/%d/%Y"
   errors: 
     format: "%{attribute} %{message}"
     messages: 
@@ -248,10 +148,52 @@ ca:
       last_word_connector: ", i "
       two_words_connector: " i "
       words_connector: ", "
-  date:
+  datetime: 
+    distance_in_words: 
+      about_x_hours: 
+        one: "aproximadament 1 hora"
+        other: "aproximadament %{count} hores"
+      about_x_months: 
+        one: "aproximadament 1 mes"
+        other: "aproximadament %{count} mesos"
+      about_x_years: 
+        one: "aproximadament 1 any"
+        other: "aproximadament %{count} anys"
+      almost_x_years: 
+        one: "quasi 1 any"
+        other: "quasi %{count} anys"
+      half_a_minute: "mig minut"
+      less_than_x_minutes: 
+        one: "menys d'1 minut"
+        other: "menys de %{count} minuts"
+      less_than_x_seconds: 
+        one: "menys d'1 segon"
+        other: "menys de %{count} segons"
+      over_x_years: 
+        one: "més d'1 any"
+        other: "més de %{count} anys"
+      x_days: 
+        one: "1 dia"
+        other: "%{count} dies"
+      x_minutes: 
+        one: "1 minut"
+        other: "%{count} minuts"
+      x_months: 
+        one: "1 mes"
+        other: "%{count} mesos"
+      x_seconds: 
+        one: "1 segon"
+        other: "%{count} segons"
+    prompts: 
+      day: dia
+      hour: hora
+      minute: minut
+      month: mes
+      second: segon
+      year: any
     formats: 
       default: "%d/%m/%Y"
-      long: "%H:%M:%S"
+      long: "%d %b %Y"
       short: "%d/%m/%Y"
   time: 
     am: am
@@ -260,3 +202,56 @@ ca:
       long: "%H:%M:%S"
       short: "%H:%M"
     pm: pm
+  date: 
+    formats: 
+      default: "%d/%m/%Y"
+      long: "%d %B %Y"
+      short: "%d/%m/%Y"
+    abbr_day_names: 
+      - Dg
+      - Dl
+      - Dm
+      - Dc
+      - Dj
+      - Dv
+      - Ds
+    abbr_month_names: 
+      - "~,\n"
+      - Gen
+      - Feb
+      - Mar
+      - Abr
+      - Mai
+      - Jun
+      - Jul
+      - Ago
+      - Set
+      - Oct
+      - Nov
+      - Des
+    day_names: 
+      - diumenge
+      - dilluns
+      - dimarts
+      - dimecres
+      - dijous
+      - divendres
+      - dissabte
+    month_names: 
+      - ~
+      - Gener
+      - Febrer
+      - Març
+      - Abril
+      - Maig
+      - Juny
+      - Juliol
+      - Agost
+      - Setembre
+      - Octubre
+      - Novembre
+      - Desembre
+    order: 
+      - !ruby/symbol day
+      - !ruby/symbol month
+      - !ruby/symbol year
